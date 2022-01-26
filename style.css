@@ -1,0 +1,8 @@
+.bgg {
+    height: 500px;
+  background-color: red;
+  background-image:
+    linear-gradient(
+      rgb(200, 218, 255), #cc9870
+    );
+}
