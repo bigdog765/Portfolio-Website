@@ -1,0 +1,2 @@
+'firebase deploy' in cmd w/ correct directory
+ clear browser cache if showing welcome screen

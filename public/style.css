@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'MyWebFont';
+     src: url(Chomsky.otf); 
+     
+}
+*{
+  margin: 0;
+}
+body {
+  height: 100vh;
+  background: white;
+}
+text{
+  font-family: "MyWebFont";
+  color: rgb(255, 255, 255);
+  font-size: 85px;
+  
+  
+  position:absolute;
+  
+  /*this is a child becuz of absolute pos*/
+
+}
+
+button.burger{
+  margin: 0;
+  position: absolute;
+  left: 100px;
+  border: 1px solid black;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+}
+bar {
+  margin: 100px;
+  display: block;
+  background: #000000;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
