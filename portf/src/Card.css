@@ -1,0 +1,32 @@
+.card-container{
+    width: 500px;
+    overflow: hidden;
+    transition: 0.3s;
+    animation: ease-in;
+    height: 550px;
+    margin: 20px;
+    background-color: rgb(129, 142, 145);
+    border-radius: 16px;
+}
+.card-container:hover{
+    transform: scale(1.025);
+}
+.imgcss{
+    height: 450px;
+    margin: 10px;
+    
+}
+.card-content{
+    margin: 1rem;
+    margin-top: 0.5rem
+}
+h3,p{
+    margin: 0;
+    padding: 0;
+    border: 2px;
+    border-radius: 5px;
+    border-color: black;
+}
+.card-title{
+    margin-bottom: 0.5rem;
+}

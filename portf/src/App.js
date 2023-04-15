@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './Card'
+import img1 from './dalle-code.png'
 
 function MyButton() {
   return (
@@ -11,10 +13,21 @@ function MyButton() {
 
 export default function MyApp() {
   return (
-    <div className='background'>
-      <h1>Aidan Van Gessel</h1>
-      <h2 className='h2'>My Software Portfolio</h2>
-      <MyButton />
+    <div className='App'>
+        <div>
+          <img></img>
+        </div>
+        <div className='Cards'>
+          <Card 
+          title='Software Development'
+          imgUrl={img1}
+          body='Hello this is the body text.'/>
+          
+        </div>
+    
     </div>
+    
+    
+    
   );
 }
