@@ -2,20 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 import Card from './Card'
 import img1 from './dalle-code.png'
+import Nav from './Nav';
 
-function MyButton() {
-  return (
-    <button>
-      I'm a button
-    </button>
-  );
-}
+
 
 export default function MyApp() {
   return (
     <div className='App'>
-        <div>
-          <img></img>
+        <div className='NavBar'>
+          <Nav title='Aidans Portfolio'>
+
+          </Nav>
         </div>
         <div className='Cards'>
           <Card 

@@ -13,8 +13,9 @@
 }
 .imgcss{
     height: 450px;
-    margin: 10px;
-    
+    width: 490px;
+    margin: 5px;
+    border-radius: 16px;
 }
 .card-content{
     margin: 1rem;
