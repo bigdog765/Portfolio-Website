@@ -1,12 +1,15 @@
+
 .card-container{
     width: 500px;
     overflow: hidden;
     transition: 0.3s;
     animation: ease-in;
     height: 550px;
-    margin: 20px;
-    background-color: rgb(129, 142, 145);
+    margin: 60px;
+    background-color: hsl(89deg 18% 74%);
     border-radius: 16px;
+    box-shadow:
+      var(--shadow-elevation-high);
 }
 .card-container:hover{
     transform: scale(1.025);
@@ -16,6 +19,7 @@
     width: 490px;
     margin: 5px;
     border-radius: 16px;
+    
 }
 .card-content{
     margin: 1rem;

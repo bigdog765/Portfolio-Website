@@ -2,9 +2,11 @@
   text-align: center;
   height: 100vh;
   width: 100%;
-  color: #000;
+  
 }
-
+.Cards{
+  display: flex;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -15,11 +17,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.h2{
-  font-size: 30px;
-  color: white;
-  
-}
+
 
 .background {
   background-image: linear-gradient(to top, white, rgb(129, 142, 145));
@@ -44,4 +42,39 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+:root {
+  --shadow-color: 0deg 0% 0%;
+  --shadow-elevation-low:
+    0.2px 0.7px 0.8px hsl(var(--shadow-color) / 0.2),
+    1px 3.2px 3.8px -2.5px hsl(var(--shadow-color) / 0.2);
+  --shadow-elevation-medium:
+    0.2px 0.7px 0.8px hsl(var(--shadow-color) / 0.19),
+    1.2px 4px 4.7px -1.2px hsl(var(--shadow-color) / 0.19),
+    4.8px 16px 18.8px -2.5px hsl(var(--shadow-color) / 0.19);
+  --shadow-elevation-high:
+    0.2px 0.7px 0.8px hsl(var(--shadow-color) / 0.18),
+    2px 6.8px 8px -0.5px hsl(var(--shadow-color) / 0.18),
+    4.4px 14.5px 17px -1px hsl(var(--shadow-color) / 0.18),
+    8.5px 28.2px 33.1px -1.5px hsl(var(--shadow-color) / 0.18),
+    15.6px 52px 61.1px -2px hsl(var(--shadow-color) / 0.18),
+    27.2px 90.4px 106.2px -2.5px hsl(var(--shadow-color) / 0.18);
+}
+.background-sh {
+  background-image: linear-gradient(
+  20deg,
+  hsl(187deg 74% 26%) 0%,
+  hsl(183deg 44% 33%) 11%,
+  hsl(176deg 29% 40%) 22%,
+  hsl(166deg 20% 47%) 34%,
+  rgb(121, 160, 143) 45%,
+  hsl(138deg 15% 62%) 56%,
+  hsl(113deg 15% 69%) 67%,
+  hsl(89deg 18% 74%) 78%,
+  hsl(70deg 21% 79%) 89%,
+  hsl(52deg 32% 86%) 100%
+);
 }
