@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Card from './Card'
+import Card from './Card.tsx'
 import img1 from './dalle-code.png'
 import Nav from './Nav';
 
