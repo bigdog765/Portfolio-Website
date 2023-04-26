@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import Card from './Card.tsx'
-import img1 from './dalle-code.png'
+import img1 from './assets/dalle-code.png'
 import Nav from './Nav';
+
 
 
 
@@ -11,8 +12,7 @@ export default function MyApp() {
     <div className='background-sh'>
       <div className='App'>
           <div className='NavBar'>
-            <Nav title='Aidans Portfolio'>
-
+            <Nav title="Aidan's Portfolio">
             </Nav>
           </div>
           <div className='Cards'>

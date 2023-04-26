@@ -7,7 +7,8 @@ function Nav({title}){
         <div className='nav-container'>
             <div className='nav-list-l'>
                 <ul>
-                    <li>
+                    <li className='skill-margin'>
+                        
                         <a href=''>Skills</a>
                     </li>
                     <li>
