@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  height: 100vh;
+  height: 175vh;
   width: 100%;
   
 }
@@ -44,15 +44,31 @@
 .background-sh {
   background-image: linear-gradient(
   20deg,
-  hsl(187deg 74% 26%) 0%,
-  hsl(183deg 44% 33%) 11%,
-  hsl(176deg 29% 40%) 22%,
-  hsl(166deg 20% 47%) 34%,
-  rgb(121, 160, 143) 45%,
-  hsl(138deg 15% 62%) 56%,
-  hsl(113deg 15% 69%) 67%,
-  hsl(89deg 18% 74%) 78%,
-  hsl(70deg 21% 79%) 89%,
-  hsl(52deg 32% 86%) 100%
+  hsl(187deg 74% 26%) 17%,
+  hsl(183deg 44% 33%) 34%,
+  hsl(176deg 29% 40%) 51%,
+  hsl(166deg 20% 47%) 68%,
+  rgb(121, 160, 143) 85%,
+  hsl(138deg 15% 62%) 102%,
+  hsl(113deg 15% 69%) 119%,
+  hsl(89deg 18% 74%) 136%,
+  hsl(70deg 21% 79%) 153%,
+  hsl(52deg 32% 86%) 175%
 );
+}
+.paragraph1{
+  margin-left:4vh;
+  margin-top: 8vh;
+  text-align:center;
+  width: 80vh; /* whatever width you want */
+  font-size: 160%;
+  color: white;
+}
+.paragraph2{
+  margin-left:4vh;
+  margin-top: 18vh;
+  text-align:center;
+  width: 80vh; /* whatever width you want */
+  font-size: 160%;
+  color: white;
 }

@@ -34,6 +34,13 @@ export default function MyApp() {
             body="An assortment of artistic creations across different forms and styles."/>
             
           </div>
+          <div className='paragraph1'>
+            Greetings! My name is Aidan Van Gessel, and I am a Computer Science graduate from Wayne State University. I am deeply passionate about the art of developing effective and innovative software programs. As a level-headed worker, I am constantly seeking opportunities to enhance my personal and career skills.
+              My programming skills are primarily focused on object-oriented languages such as C++ and Java. Additionally, I am experienced in working with Python, SQL, JavaScript, and HTML, allowing me to take on a wide range of programming tasks with confidence.
+          </div>
+          <div className='paragraph2'>
+            Throughout my career, I have developed a diverse skill set that has allowed me to take on a wide range of professional projects. I have worked on everything from game development to graphic design to database management, and each project has challenged me to grow both personally and professionally.
+          </div>
       
       </div>
     </div>
