@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  height: 175vh;
+  height: 100%;
   width: 100%;
   
 }
@@ -57,8 +57,7 @@
 );
 }
 .paragraph1{
-  margin-left:4vh;
-  margin-top: 8vh;
+  
   text-align:center;
   width: 80vh; /* whatever width you want */
   font-size: 160%;
@@ -71,4 +70,50 @@
   width: 80vh; /* whatever width you want */
   font-size: 160%;
   color: white;
+}
+.bottom-nav{
+  margin-top: 14vh;
+  height: 7vh;
+  width: 100%;
+  background-color:hsl(176deg 29% 40%);
+  text-align: center;
+  box-sizing: border-box;
+  padding-left: 4vh;
+  padding-top: 1vh;
+  
+
+  font-size: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow:
+        var(--shadow-elevation-low);
+}
+.text-section1{
+  display: flex;
+  margin-left:4vh;
+  margin-top: 12vh;
+  height: auto;
+  
+}
+.icon-container1{
+  
+  margin-left:auto;
+  margin-right: 4vh;
+  width: 90vh;
+}
+
+.imgcss-wayne{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  float: left;
+  margin-right: 6vh;
+}
+.imgcss-code{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  float: left;
 }

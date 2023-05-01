@@ -10,7 +10,7 @@
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     box-shadow:
-        var(--shadow-elevation-high);
+        var(--shadow-elevation-low);
 }
 .nav-title{
     color: white;

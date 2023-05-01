@@ -4,7 +4,7 @@
     overflow: hidden;
     transition: 0.3s;
     animation: ease-in;
-    height: 68vh;
+    height: 72vh;
     margin: 4vh;
     
     background-color: hsl(89deg 18% 74%);
@@ -33,6 +33,7 @@ h3,p{
     border-radius: 5px;
     border-color: black;
     width: 500px;
+    font-size: 120%;
     
 }
 .card-title{
