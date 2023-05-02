@@ -1,0 +1,17 @@
+.button-icon{
+    background-color: hsl(138deg 15% 62%);
+    border-style:solid;
+    border-width: 0px;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    margin-right: 2vh;
+}
+
+.img-sil{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+}

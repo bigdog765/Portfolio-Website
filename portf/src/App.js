@@ -6,7 +6,11 @@ import image_game from './assets/dalle-videogame.png'
 import image_art from './assets/dalle-art.png'
 import img_wayne from './assets/wayne-logo.png'
 import img_code from './assets/programming-icon.png'
+import img_git from './assets/git-logo.png'
+import img_linked from './assets/linked-logo.png'
+import img_db from './assets/db-icon.png'
 import Nav from './Nav';
+import Icon from './Icon.tsx';
 
 
 
@@ -54,15 +58,30 @@ export default function MyApp() {
               </div>
             </div>
           </div>
-          
-          <div className='paragraph2'>
-            Throughout my academic and professional career, I have developed a diverse skill set that has allowed me to take on a wide range of professional projects. 
-            I have worked on everything from <b>game development</b> to <b>RESTful web services</b> to <b>database management</b>, and each project has challenged me to 
-            grow both personally and professionally.
+
+
+          <div className='text-section2'>
+            
+            <div className='icon-container2'>
+              
+              <div className='db-icon'>
+                <img src={img_db} className='imgcss-db' alt=''></img>
+              </div>
+            </div>
+            <div className='paragraph2'>
+              Throughout my academic and professional career, I have developed a diverse skill set that has allowed me to take on a wide range of professional projects. 
+              I have worked on everything from <b>game development</b> to <b>RESTful web services</b> to <b>database management</b>, and each project has challenged me to 
+              grow both personally and professionally.
+            </div>
           </div>
+          
 
           <div className='bottom-nav'>   
             aidanvg.live
+            <div className='icons'>
+              <Icon silhouette={img_git} link={''}/>
+              <Icon silhouette={img_linked} link={''}/>
+            </div>
           </div>
       
       </div>
