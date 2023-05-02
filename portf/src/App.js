@@ -13,8 +13,6 @@ import Nav from './Nav';
 import Icon from './Icon.tsx';
 
 
-
-
 export default function MyApp() {
   return (
     <div className='background-sh'>

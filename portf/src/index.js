@@ -3,6 +3,30 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Home from "./pages/Home.tsx";
+import WorkExpirience from "./pages/WorkExpirience.tsx";
+import Contact from "./pages/Contact.tsx";
+import Skills from "./pages/Skills.tsx";
+import Projects from "./pages/Projects.tsx";
+import Layout from "./pages/Layout.tsx";
+
+export default function Main() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+        <Route path="home" element={<Home/>} />
+          <Route path="work" element={<WorkExpirience/>} />
+          <Route path="contact" element={<Contact/>} />
+          <Route path="skills" element={<Skills/>} />
+          <Route path="projects" element={<Projects/>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
