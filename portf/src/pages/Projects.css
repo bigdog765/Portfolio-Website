@@ -1,0 +1,28 @@
+.text-parent{
+    margin-left: 10vh;
+    
+}
+.title-project{
+    font-size: 800%;
+    font-weight: 800;
+    color: white;
+}
+.subh-1{
+    font-size: 300%;
+    margin-top: 10vh;
+}
+.background-sh {
+    background-image: linear-gradient(
+    20deg,
+    rgb(17, 104, 115) 17%,
+    hsl(183deg 44% 33%) 34%,
+    hsl(176deg 29% 40%) 51%,
+    hsl(166deg 20% 47%) 68%,
+    rgb(121, 160, 143) 85%,
+    hsl(138deg 15% 62%) 102%,
+    hsl(113deg 15% 69%) 119%,
+    hsl(89deg 18% 74%) 136%,
+    hsl(70deg 21% 79%) 153%,
+    hsl(52deg 32% 86%) 175%
+  );
+  }

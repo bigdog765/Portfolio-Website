@@ -9,6 +9,16 @@
   align-items: center;
   justify-content: center;
 }
+.aboutme-title{
+  text-align: left;
+  width: fit-content;
+  margin-left: 10vh;
+  margin-top: 10vh;
+  font-size: 800%;
+  font-weight: 800;
+  margin-bottom: -10vh;
+  color: white;
+}
 
 
 .background-sh {
@@ -49,7 +59,7 @@
 .paragraph1{
   
   text-align:center;
-  width: 80vh; /* whatever width you want */
+  width: 85vh; 
   font-size: 160%;
   color: white;
 }
@@ -100,6 +110,7 @@
   margin-top: 3vh;
   height: auto;
   
+  
 }
 .icon-container1{
   
@@ -128,4 +139,16 @@
   display: flex;
   right: 0%;
   
+}
+.see-projects{
+  margin-top: 2vh;
+  
+  display: flex;
+  margin-left: 29vh;
+  color: rgb(255, 255, 255);
+  
+  font-weight: bold;
+}
+.see-projects:hover{
+  color: #afafaf;
 }

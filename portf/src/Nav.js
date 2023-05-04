@@ -14,10 +14,10 @@ function Nav({title}){
                     <ul>
                         <li className='skill-margin'>
                             
-                            <Link to="/skills">Skills</Link>
+                            <Link to="/skills">SKILLS</Link>
                         </li>
                         <li>
-                            <Link to="/work">Work Expirience</Link>
+                            <Link to="/work">WORK EXPIRIENCE</Link>
                         </li>
                     </ul>
                 </div>
@@ -27,10 +27,10 @@ function Nav({title}){
                 <div className='nav-list-r'>
                     <ul>
                         <li>
-                            <Link to="/projects">Projects</Link>
+                            <Link to="/projects">PROJECTS</Link>
                         </li>
                         <li>
-                            <Link to="/contact">Contact</Link>
+                            <Link to="/contact">CONTACT</Link>
                         </li>
                     </ul>
                 </div>
