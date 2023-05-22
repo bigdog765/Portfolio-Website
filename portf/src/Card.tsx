@@ -2,7 +2,7 @@ import React from 'react'
 import './Card.css'
 
 
-function Card({title, imgUrl, body}){
+function Card({title, imgUrl, body}: {title:string,imgUrl:string,body:string}){
     return(
         <div className='card-parent'>
             <div className='card-container'>

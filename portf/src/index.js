@@ -11,7 +11,7 @@ import Home from "./pages/Home.tsx";
 import WorkExpirience from "./pages/WorkExpirience.tsx";
 import Contact from "./pages/Contact.tsx";
 import Skills from "./pages/Skills.tsx";
-import Projects from "./pages/Projects.tsx";
+import Projects from "./pages/Projects.js";
 import Layout from "./pages/Layout.tsx";
 import Nav from './Nav';
 

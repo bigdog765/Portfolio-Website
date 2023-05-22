@@ -11,8 +11,9 @@ import img_linked from './assets/linked-logo.png'
 import img_db from './assets/db-icon.png'
 
 import Icon from './Icon.tsx';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Projects from "./pages/Projects.tsx";
+import Projects from "./pages/Projects.js";
 import { Outlet, Link } from "react-router-dom";
 
 
@@ -22,6 +23,7 @@ export default function MyApp() {
     <div className='background-sh'>
       <div className='App'>
         <div className='Cards'>
+          
           <Card
             title='Software Development'
             imgUrl={image_code}

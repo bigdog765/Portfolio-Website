@@ -2,7 +2,7 @@ import React from 'react'
 import './Icon.css'
 import Button from 'react'
 
-function Icon({silhouette, link}){
+function Icon({silhouette, link}:{silhouette:string,link:string}){
     return(
         <div className='icon-parent'>
             

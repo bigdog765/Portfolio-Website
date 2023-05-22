@@ -25,7 +25,7 @@
         var(--shadow-elevation-low);
 }
 .nav-title{
-    color: white;
+    color: rgb(255, 255, 255);
     margin-left: 30px;
     text-align: center;
     font-size: 215%;
@@ -46,6 +46,7 @@ h1{
 .nav-list-l ul {
     list-style: none;
     display: inline-block;
+    color:rgb(10, 10, 10);
     
 }
 
@@ -60,4 +61,5 @@ a {
     list-style: none;
     display: inline-block;
     padding-right: 50px;
+    color:rgb(10, 10, 10);
 }

@@ -2,8 +2,8 @@
 .card-container{
     width: auto;
     overflow: hidden;
-    transition: 0.3s;
-    animation: ease-in;
+    transition: 0.2s;
+    animation: ease-in-out;
     height: 72vh;
     margin: 4vh;
     
@@ -13,7 +13,7 @@
       var(--shadow-elevation-high);
 }
 .card-container:hover{
-    transform: scale(1.025);
+    transform: scale(1.02);
 }
 .imgcss{
     height: 55vh;
