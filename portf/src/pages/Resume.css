@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 40px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 5px;
+}
+
+.section p, 
+.section ul {
+    margin: 5px 0;
+    max-width: 1200px;
+}
+
+.section1 p, 
+.section1 ul {
+    margin: 1px 0;
+}
+
+.section1 h2 {
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 2px;
+}

@@ -14,7 +14,7 @@ function Nav({title}){
                     <ul>
                         <li className='skill-margin'>
                             
-                            <Link to="/skills">SKILLS</Link>
+                            <Link to="/resume">RESUME</Link>
                         </li>
                         <li>
                             <Link to="/work">WORK EXPIRIENCE</Link>
