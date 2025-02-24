@@ -17,7 +17,7 @@
 }
 .imgcss{
     height: 55vh;
-    width: 55vh;
+    width: auto;
     margin: 1vh;
     border-radius: 16px;
     

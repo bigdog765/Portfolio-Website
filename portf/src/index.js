@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Home from "./pages/Home.tsx";
-import WorkExpirience from "./pages/WorkExpirience.tsx";
+import WorkExperience from "./pages/WorkExperience.tsx";
 import Contact from "./pages/Contact.tsx";
 import Resume from "./pages/Resume.tsx";
 import Projects from "./pages/Projects.js";
@@ -22,7 +22,7 @@ export default function Main() {
         <Routes>
           <Route path="/" element={<Nav title="Aidan's Portfolio" />}>
             <Route index element={<App />} />
-            <Route path="work" element={<WorkExpirience />} />
+            <Route path="work" element={<WorkExperience />} />
             <Route path="contact" element={<Contact />} />
             <Route path="resume" element={<Resume />} />
             <Route path="projects" element={<Projects />} />
