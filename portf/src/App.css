@@ -1,41 +1,53 @@
 .App {
   text-align: center;
-  width: 100vw;
-}
-.Cards{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.aboutme-title{
-  text-align: left;
-  width: fit-content;
-  margin-left: 10vh;
-  margin-top: 10vh;
-  font-size: 800%;
-  font-weight: 800;
-  margin-bottom: -10vh;
-  color: white;
+  width: 100%; /* Use 100% instead of 100vw for better compatibility */
+  display: flex; /* Enable flexbox for main App container */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  padding-bottom: 2rem; /* Add padding at the bottom for spacing */
 }
 
+.Cards {
+  display: flex;
+  justify-content: center; /* Distribute cards evenly */
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  max-width: 1200px; /* Limit width of cards container */
+  margin-top: 2rem; /* Add margin above cards */
+}
+
+.aboutme-title {
+  text-align: left;
+  width: 100%; /* Full width within parent */
+  max-width: 1200px; /* Match max width of cards for alignment */
+  margin-top: 5rem; /* Increased margin for better spacing */
+  margin-left: auto; /* Center title if needed */
+  margin-right: auto; /* Center title if needed */
+  font-size: 4rem; /* Use rem for font size, adjust as needed */
+  font-weight: 800;
+  margin-bottom: 1rem; /* Reduced negative margin, use positive spacing */
+  color: white;
+  padding-left: 1rem; /* Add some padding on the left */
+  padding-right: 1rem; /* Add some padding on the right */
+}
 
 .background-sh {
   background-image: linear-gradient(
-  20deg,
-  rgb(17, 104, 115) 17%,
-  hsl(183deg 44% 33%) 34%,
-  hsl(176deg 29% 40%) 51%,
-  hsl(166deg 20% 47%) 68%,
-  rgb(121, 160, 143) 85%,
-  hsl(138deg 15% 62%) 102%,
-  hsl(113deg 15% 69%) 119%,
-  hsl(89deg 18% 74%) 136%,
-  hsl(70deg 21% 79%) 153%,
-  hsl(52deg 32% 86%) 175%
-);
+    20deg,
+    rgb(17, 104, 115) 17%,
+    hsl(183deg 44% 33%) 34%,
+    hsl(176deg 29% 40%) 51%,
+    hsl(166deg 20% 47%) 68%,
+    rgb(121, 160, 143) 85%,
+    hsl(138deg 15% 62%) 102%,
+    hsl(113deg 15% 69%) 119%,
+    hsl(89deg 18% 74%) 136%,
+    hsl(70deg 21% 79%) 153%,
+    hsl(52deg 32% 86%) 175%
+  );
+  min-height: 100vh; /* Ensure background covers full viewport height */
 }
 
-
+/* Shadow variables - Good as they are */
 :root {
   --shadow-color: 0deg 0% 0%;
   --shadow-elevation-low:
@@ -54,99 +66,119 @@
     27.2px 90.4px 106.2px -2.5px hsl(var(--shadow-color) / 0.18);
 }
 
-.paragraph1{
-  
-  text-align:center;
-  width: 85vh; 
-  font-size: 160%;
+.paragraph1,
+.paragraph2 {
+  text-align: left; /* Align text to the left for readability */
+  max-width: 85ch; /* Use ch unit for width based on character width */
+  font-size: 1.2rem; /* Use rem for font size */
   color: white;
-}
-.paragraph2{
-  margin-left:4vh;
-  margin-top: 18vh;
-  text-align:center;
-  width: 80vh; /* whatever width you want */
-  font-size: 160%;
-  color: white;
-}
-.bottom-nav{
-  display: flex;
-  margin-top: 14vh;
-  height: 7vh;
-  width: 100%;
-  background-color:hsl(176deg 29% 40%);
-  text-align: center;
-  box-sizing: border-box;
-  padding-left: 4vh;
-  padding-top: 2vh;
-  
-
-  font-size: 100%;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    box-shadow:
-        var(--shadow-elevation-low);
-}
-.text-section1{
-  display: flex;
-  margin-left:4vh;
-  margin-top: 16vh;
-  height: auto;
-  
-}
-.icon-container2{
-  
-  margin-left:8vh;
-  margin-right: 36vh;
-  width: 40vh;
-  
-  margin-top: 6vh;
-}
-.text-section2{
-  display: flex;
-  margin-left:12vh;
-  margin-top: 3vh;
-  height: auto;
-  
-  
-}
-.icon-container1{
-  
-  margin-left:auto;
-  margin-right: 8vh;
-  width: 90vh;
+  padding: 1rem; /* Add padding around paragraphs */
 }
 
-.imgcss-wayne{
-  display: block;
+.text-section1,
+.text-section2 {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Align items to the start vertically */
+  margin-top: 3rem; /* Add top margin to sections */
+  padding: 0 1rem; /* Add horizontal padding to sections */
+  max-width: 1200px; /* Limit width of text sections */
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
-  float: left;
-  margin-right: 6vh;
 }
-.imgcss-code{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  float: left;
-}
-.icons{
-  position: absolute;
+
+.icon-container1,
+.icon-container2 {
+  flex: 1; /* Allow icon containers to take available space */
+  min-width: 200px; /* Minimum width for icon containers */
   display: flex;
-  right: 0%;
-  
+  flex-direction: column; /* Stack icons vertically */
+  align-items: center; /* Center icons horizontally */
+  justify-content: center; /* Center icons vertically */
+  padding: 1rem;
 }
-.see-projects{
-  margin-top: 2vh;
-  
+
+.icon-container2 {
+  margin-right: 2rem; /* Spacing between text and icons in section 2 */
+}
+.icon-container1 {
+  margin-left: 2rem; /* Spacing between text and icons in section 1 */
+}
+
+.imgcss-wayne,
+.imgcss-code,
+.imgcss-db {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 1rem; /* Spacing below images */
+}
+
+.icons {
   display: flex;
-  margin-left: 29vh;
-  color: rgb(255, 255, 255);
-  
+  justify-content: flex-end; /* Align icons to the right */
+  align-items: center; /* Vertically center icons */
+  margin-left: auto; /* Push icons to the right edge */
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-between; /* Space out text and icons */
+  align-items: center; /* Vertically align items */
+  margin-top: 4rem; /* Increased margin for better spacing */
+  padding: 1rem 2rem; /* More balanced padding */
+  background-color: hsl(176deg 29% 40%);
+  color: white; /* Set text color to white for bottom nav */
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: var(--shadow-elevation-low);
+  font-size: 1rem; /* Use rem for font size */
+}
+
+.see-projects {
+  margin-top: 1rem; /* Adjust margin for better spacing */
+  color: white;
   font-weight: bold;
+  text-decoration: none; /* Ensure it's not inheriting link styles */
+  display: inline-block; /* To allow margin and padding if needed */
+  padding: 0.5rem 1rem; /* Add some padding for click area */
+  border-radius: 8px; /* Optional: Add border radius for button look */
 }
-.see-projects:hover{
+
+.see-projects:hover {
   color: #afafaf;
+}
+
+/* Media Query for smaller screens - Example adjustments for mobile */
+@media (max-width: 768px) {
+  .Cards {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center cards on smaller screens */
+  }
+  .aboutme-title {
+    font-size: 3rem; /* Smaller title on mobile */
+    text-align: center; /* Center title on mobile */
+  }
+  .text-section1,
+  .text-section2 {
+    flex-direction: column; /* Stack text and icons vertically on mobile */
+    text-align: center; /* Center text on mobile */
+    align-items: center; /* Center items on mobile */
+  }
+  .icon-container1,
+  .icon-container2 {
+    margin: 1rem 0; /* Adjust icon container margins for mobile */
+  }
+  .paragraph1,
+  .paragraph2 {
+    text-align: center; /* Center paragraph text on mobile */
+  }
+  .icons {
+    justify-content: center; /* Center icons on mobile */
+    margin-left: 0; /* Reset margin for centered icons */
+  }
+  .bottom-nav {
+    flex-direction: column; /* Stack bottom nav items on mobile */
+    text-align: center; /* Center text in bottom nav on mobile */
+    padding: 1rem; /* Adjust padding for bottom nav on mobile */
+  }
 }

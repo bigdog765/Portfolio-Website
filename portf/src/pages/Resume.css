@@ -1,38 +1,95 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
 
-.container {
-    max-width: 1000px;
-    margin: auto;
-}
-
-h1, h2 {
-    color: #333;
-}
-
-.section {
+  
+  .container {
+    max-width: 800px; /* Standard resume width */
+    margin: 20px auto; /* Center container and add margin */
+    background-color: white; /* White background for container */
+    padding: 30px; /* Padding inside container */
+    border-radius: 8px; /* Rounded corners for container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for container */
+  }
+  
+  h1,
+  h2,
+  h3 {
+    color: #333; /* Heading color */
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+  
+  h1 {
+    font-size: 2.5em; /* Main title size */
+    text-align: center; /* Center main title */
+    margin-bottom: 0.5em;
+  }
+  
+  h2 {
+    font-size: 1.8em; /* Section title size */
+    border-bottom: 2px solid #0073e6; /* Section underline */
+    padding-bottom: 0.3em;
+  }
+  
+  h3 {
+    font-size: 1.4em; /* Subsection title size */
+    font-weight: bold; /* Bold for subsection titles */
+  }
+  
+  .section {
     margin-bottom: 20px;
-}
-
-.section h2 {
-    border-bottom: 2px solid #0073e6;
-    padding-bottom: 5px;
-}
-
-.section p, 
-.section ul {
-    margin: 5px 0;
-    max-width: 1200px;
-}
-
-.section1 p, 
-.section1 ul {
-    margin: 1px 0;
-}
-
-.section1 h2 {
-    border-bottom: 2px solid #0073e6;
-    padding-bottom: 2px;
-}
+  }
+  
+  .section p,
+  .section ul {
+    margin: 0.5em 0;
+    max-width: 100%; /* Ensure content fits container */
+    font-size: 1em; /* Standard paragraph size */
+  }
+  
+  .section ul {
+    padding-left: 20px; /* Indent list items */
+  }
+  
+  .section li {
+    margin-bottom: 0.3em; /* Spacing between list items */
+  }
+  
+  .section1 h2 {
+    border-bottom: 1px solid #0073e6; /* Lighter border for section1 */
+    padding-bottom: 0.2em;
+  }
+  
+  .section1 p {
+    margin: 0.3em 0;
+    font-size: 1em;
+  }
+  
+  strong {
+    font-weight: bold; /* Style for strong text */
+  }
+  
+  a {
+    color: #0073e6; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+  }
+  
+  /* Media query for print - optimize for printing */
+  @media print {
+    body {
+      background-color: white; /* White background for print */
+      color: black; /* Black text for print */
+      padding: 0; /* No padding for print */
+    }
+    .container {
+      box-shadow: none; /* Remove shadow for print */
+      border: none; /* Remove border for print */
+      margin: 0; /* No margin for print */
+      padding: 0; /* No padding for print */
+    }
+    h2 {
+      border-bottom: 1px solid black; /* Black underline for print */
+    }
+  }

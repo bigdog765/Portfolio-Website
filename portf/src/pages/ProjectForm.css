@@ -1,10 +1,36 @@
-.formParent{
-    width: auto;
-    height: 50vh;
-    background-color:aquamarine;
-    margin-right: 10vh;
+.formParent {
+    width: 100%; /* Take full width of parent */
+    max-width: 400px; /* Limit form width */
+    margin: 1.5rem; /* Use rem for margin around form */
+    background-color: aquamarine;
     border-radius: 25px;
-}
-.title{
+    padding: 1.5rem; /* Add padding inside form */
+    box-sizing: border-box; /* Include padding in width calculation */
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: stretch; /* Stretch items to fill form width */
+  }
+  
+  .title {
     color: black;
-}
+    font-size: 1.5rem; /* Use rem for title font size */
+    margin-bottom: 1rem; /* Spacing below title */
+    text-align: center; /* Center title text */
+  }
+  
+  .picture {
+    margin-bottom: 1rem; /* Spacing below picture */
+  }
+  
+  .picture img {
+    max-width: 100%; /* Image takes full width of container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners for image */
+    display: block; /* Prevent extra space below image */
+  }
+  
+  .body {
+    color: #333; /* Darker color for body text */
+    font-size: 1rem; /* Use rem for body font size */
+    line-height: 1.4; /* Improve readability with line height */
+  }
