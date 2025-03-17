@@ -5,7 +5,7 @@
 
 .card-container {
   width: 100%; /* Card takes full width of parent */
-  max-width: 400px; /* Limit card width */
+  max-width: 50vh; /* Limit card width */
   overflow: hidden;
   transition: transform 0.2s ease-in-out; /* Smooth transition for hover */
   margin: 1.5rem; /* Use rem for margin */
