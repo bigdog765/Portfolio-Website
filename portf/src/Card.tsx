@@ -1,13 +1,16 @@
 import React from 'react'
 import './Card.css'
+import RenderModel from './RenderModel.tsx'
 
 
 function Card({title, imgUrl, body}: {title:string,imgUrl:string,body:string}){
+    const isModel = imgUrl.includes('.glb')
     return(
         <div className='card-parent'>
             <div className='card-container'>
                 <div className='img-container'>
-                    <img src={imgUrl} className='imgcss' alt=''></img>
+                    {isModel ? <RenderModel modelPath={imgUrl} width={300} height={300} /> :
+                    <img src={imgUrl} className='imgcss' alt=''></img>}
                 </div>
                 <div className='card-content'>
                     <div className='card-title'>
