@@ -30,14 +30,9 @@ export default function MyApp() {
             body='Work that shows off the talent of my programming skills containing applications, scripts and more.' />
 
           <Card
-            title='Game Development'
-            imgUrl={image_game}
-            body="A section dedicated to the enviromental art and game logic I've designed for various video game projects." />
-
-          <Card
             title='Creative Work'
             imgUrl={image_art}
-            body="An assortment of artistic creations across different forms and styles." />
+            body="An assortment of artistic creations across different forms and styles, including environmental design, modeling 3D objects and rendering work." />
 
         </div>
         <div className='aboutme-title'>ABOUT ME</div>

@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom'
 
 
 function Card({title, imgUrl, body}: {title:string,imgUrl:string,body:string}){
-    const isModel = imgUrl.includes('.glb')
+    
     return(
         <div className='card-parent'>
             
                 <div className='card-container'>
                     <Link to='/work'>
                         <div className='img-container'>
-                            {isModel ? <RenderModel modelPath={imgUrl}  /> :
-                            <img src={imgUrl} className='imgcss' alt=''></img>}
+                            
+                            <img src={imgUrl} className='imgcss' alt=''></img>
                         </div>
                         <div className='card-content'>
                             <div className='card-title'>

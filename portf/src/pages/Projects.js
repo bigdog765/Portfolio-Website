@@ -3,6 +3,7 @@ import './Projects.css';
 import  ProjectForm from './ProjectForm.js';
 import pic from '../assets/dalle-code.png';
 function Projects() {
+    
     return(
       <div className="background-sh">
         <div className="text-parent">
@@ -11,8 +12,6 @@ function Projects() {
             <ProjectForm title="Recipe Selection Screen using Spoonacular's API"
             imgUrl= {pic}
             body= 'test body'/>
-
-            
           </div>
         </div>
       </div>

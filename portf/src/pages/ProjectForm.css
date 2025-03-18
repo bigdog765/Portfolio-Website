@@ -1,4 +1,4 @@
-.formParent {
+.projectform {
     width: 100%; /* Take full width of parent */
     max-width: 400px; /* Limit form width */
     margin: 1.5rem; /* Use rem for margin around form */
