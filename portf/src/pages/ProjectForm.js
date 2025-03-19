@@ -2,19 +2,27 @@ import React from "react";
 import './ProjectForm.css';
 import RenderModel from '../RenderModel.tsx'; // Adjust the path as needed
 
-function ProjectForm({title, imgUrl, body}){
+function ProjectForm({title, imgUrl, subtitle, desc, link}){
   const isModel = imgUrl.includes('.glb')
     return(
       <div className="projectform">
-        <div className="formParent">
+        <div className="title-picture">
           <div className="title">{title}</div>
+          <div className="subtitle">{subtitle}</div>
           <div className="picture">
             {isModel ? <RenderModel modelPath={imgUrl}  /> :
             <img src={imgUrl} className='imgcss' alt=''></img>}
           </div>
           
         </div>
-        <div className="body">{body}</div>
+        <div className="project-body">
+          <div className="project-link">
+            <a href={link} target="_blank" rel="noopener noreferrer">
+            {link}</a>
+          </div>
+          <div className="project-desc">{desc}</div>
+          
+        </div>
       </div>
     )
   };

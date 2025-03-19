@@ -2,16 +2,24 @@ import React from "react";
 import './Projects.css';
 import  ProjectForm from './ProjectForm.js';
 import pic from '../assets/dalle-code.png';
+import projectData from '../assets/projects.json'
 function Projects() {
     
     return(
       <div className="background-sh">
         <div className="text-parent">
-          <div className="title-project">PROJECTS</div>
+          <div className="title-project">Projects</div>
           <div className="subh-1">SOFTWARE RELATED PROJECTS
-            <ProjectForm title="Recipe Selection Screen using Spoonacular's API"
-            imgUrl= {pic}
-            body= 'test body'/>
+            {projectData.map((project, index) => (
+              <ProjectForm
+                key={index}
+                title={project.title}
+                subtitle={project.subtitle}
+                imgUrl={project.imgUrl}
+                desc={project.desc}
+                link={project.link}
+              />
+            ))}
           </div>
         </div>
       </div>

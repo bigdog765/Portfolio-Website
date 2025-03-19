@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import Card from './Card.tsx'
 import image_code from './assets/dalle-code.png'
-import image_game from './assets/dalle-videogame.png'
 import image_art from './assets/dalle-art.png'
 import img_wayne from './assets/wayne-logo.png'
 import img_code from './assets/programming-icon.png'
