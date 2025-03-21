@@ -16,20 +16,20 @@
     color: black;
     font-size: 1.5rem; /* Use rem for title font size */
     margin-bottom: 1rem; /* Spacing below title */
-    text-align: center; /* Center title text */
+    text-align: left;
     max-width: 400px;
   }
   .subtitle{
     color: black;
     font-size: 1rem; /* Use rem for title font size */
     margin-bottom: 1rem; /* Spacing below title */
-    text-align: center; /* Center title text */
+    text-align: left;
     max-width: 400px;
   }
   
   .picture {
     margin-bottom: 1rem; /* Spacing below picture */
-    max-width: 400px; /* Limit width of picture */
+    max-width: 500px; /* Limit width of picture */
   }
   
   .picture img {

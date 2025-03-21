@@ -1,7 +1,7 @@
 import React from "react";
 import './Projects.css';
 import  ProjectForm from './ProjectForm.js';
-import pic from '../assets/dalle-code.png';
+
 import projectData from '../assets/projects.json'
 function Projects() {
     

@@ -12,27 +12,35 @@ const RenderModel = ({modelPath, width=window.innerWidth, height=window.innerHei
     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
 
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(width, height);
+    renderer.setClearColor(0x2e2e2e, 1); // Set background color to dark grey
     
     mountRef.current.appendChild(renderer.domElement);
 
     loader.load(modelPath, function (gltf) {
-      const pivot = new THREE.Object3D();
-      scene.add(pivot);
+      setLighting();
       model.current = gltf.scene; 
-      model.current.scale.set(0.5, 0.5, 0.5);
-      const light = new THREE.AmbientLight( 0x404040 ); // soft white light
-      scene.add( light );
       scene.add(model.current);
 
-      model.current.position.set(0, -2, 0);
-      pivot.add(model.current);
+      setPivot(model);
       renderer.setAnimationLoop( animate );
-      camera.position.z = 5;
+
+      model.current.scale.set(0.5, 0.5, 0.5);
+      model.current.position.set(0, -2, 0);
+      camera.position.z = 3.5;
     }, undefined, function (error) {
       console.error(error);
     });
     
+    function setLighting(){
+      const light = new THREE.AmbientLight( 0x404040, 50 ); // soft white light
+      scene.add( light );
+    }
+    function setPivot(model: any) {
+      const pivot = new THREE.Object3D(); // Create a pivot point at 0,0,0
+      scene.add(pivot);
+      pivot.add(model.current); // Will rotate the model around the pivot
+    }
 
     function animate() {
       //model.current.rotation.x += 0.01;
@@ -52,3 +60,5 @@ const RenderModel = ({modelPath, width=window.innerWidth, height=window.innerHei
 };
   
 export default RenderModel;
+
+

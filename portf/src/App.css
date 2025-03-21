@@ -170,6 +170,7 @@
   .paragraph1,
   .paragraph2 {
     text-align: center; /* Center paragraph text on mobile */
+
   }
   .icons {
     justify-content: center; /* Center icons on mobile */

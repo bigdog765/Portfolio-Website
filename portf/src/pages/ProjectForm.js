@@ -10,7 +10,7 @@ function ProjectForm({title, imgUrl, subtitle, desc, link}){
           <div className="title">{title}</div>
           <div className="subtitle">{subtitle}</div>
           <div className="picture">
-            {isModel ? <RenderModel modelPath={imgUrl}  /> :
+            {isModel ? <RenderModel modelPath={imgUrl} height={500} width={500} /> :
             <img src={imgUrl} className='imgcss' alt=''></img>}
           </div>
           
@@ -20,6 +20,7 @@ function ProjectForm({title, imgUrl, subtitle, desc, link}){
             <a href={link} target="_blank" rel="noopener noreferrer">
             {link}</a>
           </div>
+          <br></br>
           <div className="project-desc">{desc}</div>
           
         </div>

@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Card from './Card.tsx'
-import image_code from './assets/dalle-code.png'
-import image_art from './assets/dalle-art.png'
+import image_code from './assets/software.png'
+import image_art from './assets/graphics.png'
 import img_wayne from './assets/wayne-logo.png'
 import img_code from './assets/programming-icon.png'
 import img_git from './assets/git-logo.png'
@@ -42,7 +42,10 @@ export default function MyApp() {
             I am constantly seeking opportunities to enhance my personal and career skills.
             My programming skills are primarily focused on object-oriented languages such as <b>C++</b> and <b>Java</b>.
             Additionally, I am experienced in working with Python, SQL, JavaScript, and HTML, allowing me to take on a wide range of
-            programming tasks with confidence.
+            programming tasks with confidence. <br></br>
+            Now working as <b> Head Data Engineer at Versaware</b>, a nutritional intelligence-based startup.
+            Proficient in <b>backend frameworks and data pipeline architecture</b>, including emerging technologies like RAG-based data, vector databases, and machine learning principles.
+            Hands-on experience with the <b>Qt for MCU </b>developer environment, organizing the data architecture of an embedded device from the low-level up to the cloud.
           </div>
           <div className='icon-container1'>
             <div className='wayne-icon'>
@@ -65,8 +68,7 @@ export default function MyApp() {
           </div>
           <div className='paragraph2'>
             Throughout my academic and professional career, I have developed a diverse skill set that has allowed me to take on a wide range of professional projects.
-            I have worked on everything from <b>game development</b> to <b>RESTful web services</b> to <b>database management</b>, and each project has challenged me to
-            grow both personally and professionally.
+            I have worked on everything from <b>game development</b> to <b>RESTful web services</b> to <b>database management</b>, and each project has challenged me to grow both personally and professionally.
             <div className='see-projects'>
               <Routes>
 
