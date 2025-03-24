@@ -3,12 +3,12 @@
     
     margin: 1.5rem; /* Use rem for margin around form */
     background-color: aquamarine;
-    border-radius: 25px;
+    border-radius: 10px;
     padding: 1.5rem; /* Add padding inside form */
     box-sizing: border-box; /* Include padding in width calculation */
     display: flex;
     flex-direction: row; /* Stack form elements vertically */
-    align-items: flex-start; /* Stretch items to fill form width */
+    align-items: center; /* Stretch items to fill form width */
     gap: 20px;
   }
   
@@ -17,7 +17,6 @@
     font-size: 1.5rem; /* Use rem for title font size */
     margin-bottom: 1rem; /* Spacing below title */
     text-align: left;
-    max-width: 400px;
   }
   .subtitle{
     color: black;
@@ -40,9 +39,10 @@
   }
   
   .project-body {
-    padding: 2%;
+    padding: 3%;
     color: #333; /* Darker color for body text */
     font-size: 1rem; /* Use rem for body font size */
     line-height: 1.4; /* Improve readability with line height */
     flex: 1;
+    align-items: center;
   }

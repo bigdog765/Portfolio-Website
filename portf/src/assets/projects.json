@@ -3,14 +3,14 @@
       "title": "3D Column Asset",
       "subtitle": "Personal Work",
       "imgUrl": "/roman_column.glb",
-      "desc": "For this model, I meticulously crafted a classical Roman Corinthian column, paying special attention to the intricate leaf detailing typical of the style. I aimed to achieve a polished white marble appearance, enhancing realism and usability across different projects. The model is optimized and exported in multiple formats—OBJ, GLB, glTF, and USDZ—ensuring versatility for architectural visualization, games, or AR/VR use. Additionally, I kept the resolution high (2K) for crisp textures while maintaining efficient geometry for smooth performance.",
+      "desc": "For this model, I meticulously crafted a classical Roman Corinthian column in Blender, paying special attention to the intricate leaf detailing typical of the style. I aimed to achieve a polished white marble appearance, enhancing realism and usability across different projects. The model is optimized and exported in multiple formats—OBJ, GLB and glTF—ensuring versatility for architectural visualization, games, or AR/VR use. Additionally, I kept the resolution high (2K) for crisp textures while maintaining efficient geometry for smooth performance.",
       "link": "https://www.fab.com/listings/c6059763-fed2-4c08-8d8e-ad7a88b898b7"
     },
     {
       "title": "Unity Mesh Generator",
       "subtitle": "Personal Project",
       "imgUrl": "graphics.png",
-      "desc": "This is a project I built with my bare hands, blood, sweat, and tears.",
+      "desc": "This MeshGenerator script in Unity procedurally generates a 3D mesh composed of randomly placed points constrained within a specific spherical range. Using KDTree for efficient spatial queries, it connects each vertex to its two nearest neighbors to form triangles. It dynamically ensures the mesh faces outward by checking normals and flipping triangles if necessary. Additionally, each vertex is visualized using a prefab (e.g., a sphere) instantiated at its location. The script showcases procedural mesh generation, nearest neighbor search, and normal correction within Unity using C#.",
       "link": "https://www.example.com"
     },
     {
