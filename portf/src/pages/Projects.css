@@ -13,24 +13,36 @@
       hsl(52deg 32% 86%) 175%
     );
     min-height: 100vh; /* Ensure background covers full viewport height */
+    
   }
   
   .text-parent {
     padding: 2rem; /* Add padding around text content */
+    padding-right: 5rem;
     max-width: 1200px; /* Limit width of text parent */
     margin-left: auto;
     margin-right: auto;
+    /*border: 2px solid #fff; /* Add border around text parent */
+    border-radius: 8px; /* Rounded corners for container */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for container */
   }
   
   .title-project {
     font-size: 4rem; /* Use rem for project title, adjusted down from 800% */
-    font-weight: 800;
+    font-weight: 700;
     color: rgb(248, 248, 248);
     text-align: left; /* Align title to the left */
-    margin-bottom: 1rem; /* Spacing below title */
+    
+  }
+  .subt-project{
+    font-size: x-large; /* Use rem for subtitle, adjusted down from 400% */
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-align: left; /* Align subtitle to the left */
+    padding-top: 1rem;
   }
   
-  .subh-1 {
+  .sfw-proj {
     font-size: 2rem; /* Use rem for subtitle, adjusted down from 400% */
     margin-top: 2rem; /* Adjusted margin */
     color: rgb(221, 220, 240);

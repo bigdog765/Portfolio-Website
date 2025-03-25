@@ -9,7 +9,8 @@ function Projects() {
       <div className="background-sh">
         <div className="text-parent">
           <div className="title-project">Projects</div>
-          <div className="subh-1">SOFTWARE RELATED PROJECTS
+          <div className="subt-project">Software Development</div>
+          <div className="sfw-proj">
             {projectData.map((project, index) => (
               <ProjectForm
                 key={index}
@@ -21,6 +22,7 @@ function Projects() {
               />
             ))}
           </div>
+          
         </div>
       </div>
     )

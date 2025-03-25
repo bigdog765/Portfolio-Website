@@ -11,7 +11,7 @@
       "subtitle": "Personal Project",
       "imgUrl": "graphics.png",
       "desc": "This MeshGenerator script in Unity procedurally generates a 3D mesh composed of randomly placed points constrained within a specific spherical range. Using KDTree for efficient spatial queries, it connects each vertex to its two nearest neighbors to form triangles. It dynamically ensures the mesh faces outward by checking normals and flipping triangles if necessary. Additionally, each vertex is visualized using a prefab (e.g., a sphere) instantiated at its location. The script showcases procedural mesh generation, nearest neighbor search, and normal correction within Unity using C#.",
-      "link": "https://www.example.com"
+      "link": "https://github.com/bigdog765/UnityMeshGenerator"
     },
     {
         "title": "Unity FPS Vacuum Shooter",
