@@ -9,30 +9,24 @@
     {
       "title": "Unity Mesh Generator",
       "subtitle": "Personal Project",
-      "imgUrl": "graphics.png",
+      "imgUrl": "/MeshGen.png",
       "desc": "This MeshGenerator script in Unity procedurally generates a 3D mesh composed of randomly placed points constrained within a specific spherical range. Using KDTree for efficient spatial queries, it connects each vertex to its two nearest neighbors to form triangles. It dynamically ensures the mesh faces outward by checking normals and flipping triangles if necessary. Additionally, each vertex is visualized using a prefab (e.g., a sphere) instantiated at its location. The script showcases procedural mesh generation, nearest neighbor search, and normal correction within Unity using C#.",
       "link": "https://github.com/bigdog765/UnityMeshGenerator"
     },
-    {
-        "title": "Unity FPS Vacuum Shooter",
-        "subtitle": "Personal Project",
-        "imgUrl": "graphics.png",
-        "desc": "This is a project I built with my bare hands, blood, sweat, and tears.",
-        "link": "https://www.example.com"
-    },
+    
     {
         "title": "AI Regular Show",
         "subtitle": "Personal Project",
-        "imgUrl": "graphics.png",
-        "desc": "This is a fun project I decided to attempt after being inspired by a hilarious AI-driven Youtube stream called 'AI Sponge'. Instead of Spongebob, I changed the cartoon to one of my favorite shows as a kid, Regular Show. ",
-        "link": "https://www.example.com"
+        "imgUrl": "/AIRegShow.png",
+        "desc": "This is a fun project I decided to attempt after being inspired by a hilarious AI-driven Youtube stream called 'AI Sponge'. Instead of Spongebob, I changed the cartoon to one of my favorite shows as a kid, Regular Show. This project combines the power of Discord Bots, with a direct connection to a Unity Scene that renders all character animation as well as speech, all in real time. Users can interact on a Discord server by providing a subject, in which the main characters Mordecai and Rigby will respond with a funny skit. This project includes Discord bot integration, Python scripting, networking over ports, streaming audio data, AI voice generation and custom modeling and animation in Blender & Unity. The project is a fun way to interact with a favorite show, and see the characters come to life in a new way.",
+        "link": "https://github.com/bigdog765/RegularShowAI"
     },
     {
         "title": "Telescope Stargazing Info Display",
         "subtitle": "Personal Project",
-        "imgUrl": "graphics.png",
-        "desc": "This is a project I built with my bare hands, blood, sweat, and tears.",
-        "link": "https://www.example.com"
+        "imgUrl": "/Teles.jpg",
+        "desc": "This is a DIY project that provides a screen to a user using a telescope. The screen will display useful information for the stargazer, including what planets are in the sky and if sky visibility is good enough to stargaze. The inspiration for starting this project came from a challenge I faced while using my telescope at night. In the dark, it’s difficult to gauge sky visibility—factors like cloud cover, humidity, and other conditions aren't always obvious. Additionally, I wanted an easy way to know which planets were visible at any given time. This projects proves to provide the solution I was looking for.",
+        "link": "https://www.instructables.com/Astronomy-Data-Telescope-Screen/"
     },
     {
         "title": "AI Recipe Generator",
@@ -68,6 +62,13 @@
         "imgUrl": "graphics.png",
         "desc": "This is a project I built with my bare hands, blood, sweat, and tears.",
         "link": "https://www.example.com"
+    },
+    {
+        "title": "Unity FPS Vacuum Shooter",
+        "subtitle": "Personal Project",
+        "imgUrl": "/VacuumFPS.png",
+        "desc": "This is a Unity Game that I created that is a first person shooter where the player uses a vacuum gun to suck up objects and shoot them at targets. The game is built using Unity and C# and includes a variety of objects that the player can interact with. The game includes a variety of levels and challenges that the player must complete in order to progress. This project focuses alot on player movement, as I wanted to create a FPS that felt responsive and smooth, the player has the ability to double jump, strafe jump and wall run.",
+        "link": "https://github.com/bigdog765/VacuumFPS"
     },
     {
         "title": "Custom Game Environment Development",
