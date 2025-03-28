@@ -15,8 +15,8 @@
   
   .title {
     color: black;
-    font-size: 1.5rem; /* Use rem for title font size */
-    margin-bottom: 1rem; /* Spacing below title */
+    font-size: 2rem; /* Use rem for title font size */
+    margin-bottom: 0.5rem; /* Spacing below title */
     text-align: left;
   }
   .subtitle{
