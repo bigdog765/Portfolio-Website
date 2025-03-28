@@ -39,8 +39,8 @@
         "title": "Google Maps Digital Coupon Finder",
         "subtitle": "2024 Hackathon",
         "imgUrl": "graphics.png",
-        "desc": "This is a project I built with my bare hands, blood, sweat, and tears.",
-        "link": "https://www.example.com"
+        "desc": "I participated in a hackathon called the Google Photorealistic 3D Maps Challenge, hosted by Devpost and Google. The goal of the hackathon was to explore innovative ways for users to interact with Google Maps, with themes including gamification, immersive marketing, and promoting environmental sustainability. For our submission, we developed an interactive portal that allows users to search for coupons and deals at their favorite locations around the world. Users are virtually flown into their chosen destination on the map, where the camera smoothly pans across various coupon-enabled spots. These deals appear directly on the map in an interactive format, and users can select and apply the coupon of their choice.",
+        "link": "https://3d-mapathon.vercel.app/"
     },
     {
         "title": "Wordstack - Reddit Game Hackathon",
