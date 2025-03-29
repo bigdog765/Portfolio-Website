@@ -26,12 +26,14 @@ export default function MyApp() {
           <Card
             title='Software Development'
             imgUrl={image_code}
-            body='Work that shows off the talent of my programming skills containing applications, scripts and more.' />
+            body='Work that shows off the talent of my programming skills containing applications, scripts and more.'
+            scrollTo='software-section'/>
 
           <Card
             title='Creative Work'
             imgUrl={image_art}
-            body="An assortment of artistic creations across different forms and styles, including environmental design, modeling 3D objects and rendering work." />
+            body="An assortment of artistic creations across different forms and styles, including environmental design, modeling 3D objects and rendering work."
+            scrollTo='creative-section'/>
 
         </div>
         <div className='aboutme-title'>ABOUT ME</div>

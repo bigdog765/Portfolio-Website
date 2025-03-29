@@ -4,13 +4,13 @@ import RenderModel from './RenderModel.tsx'
 import { Link } from 'react-router-dom'
 
 
-function Card({title, imgUrl, body}: {title:string,imgUrl:string,body:string}){
+function Card({title, imgUrl, body, scrollTo}: {title:string,imgUrl:string,body:string, scrollTo: string}){
     
     return(
         <div className='card-parent'>
             
                 <div className='card-container'>
-                    <Link to='/work'>
+                    <Link to={`/projects#${scrollTo}`}>
                         <div className='img-container'>
                             
                             <img src={imgUrl} className='imgcss' alt=''></img>

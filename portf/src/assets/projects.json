@@ -1,28 +1,32 @@
 [
     {
-      "title": "3D Column Asset",
-      "subtitle": "Personal Work",
-      "imgUrl": "/roman_column.glb",
-      "desc": "For this model, I meticulously crafted a classical Roman Corinthian column in Blender, paying special attention to the intricate leaf detailing typical of the style. I aimed to achieve a polished white marble appearance, enhancing realism and usability across different projects. The model is optimized and exported in multiple formats—OBJ, GLB and glTF—ensuring versatility for architectural visualization, games, or AR/VR use. Additionally, I kept the resolution high (2K) for crisp textures while maintaining efficient geometry for smooth performance.",
-      "link": "https://www.fab.com/listings/c6059763-fed2-4c08-8d8e-ad7a88b898b7"
+        "title": "Game Environment Development",
+        "type": "creative",
+        "subtitle": "Black Ops 3 Mod Tools",
+        "imgUrl": "hijacked.jpg",
+        "desc": "This is a collection of modded video game maps that I created in my free time. Each project represents over 100 hours of development, offering players an immersive and visually stunning experience. These maps were built using the Black Ops 3 Zombie Mod Tools available on the Steam Workshop. Every map involved a full development pipeline—planning, level design, asset modeling and texturing, scripting AI behavior and user interaction, and applying post-processing effects for lighting and visuals. I continually applied new techniques learned through self-study and tutorial videos, and you can see the quality progression from one map to the next. My proudest creation is the Hijacked Remake Map, with over 45,000+ downloads, which introduced a groundbreaking feature: fully drivable vehicles that players can use to navigate the map—something never before implemented in this modding space.",
+        "link": "https://steamcommunity.com/profiles/76561198143254205/myworkshopfiles/?appid=311210"
     },
     {
+      "title": "3D Column Asset",
+      "type": "creative",
+      "subtitle": "Personal Work",
+      "imgUrl": "/roman_column.glb",
+      "desc": "For this model (you can interact with it), I meticulously crafted a classical Roman Corinthian column in Blender, paying special attention to the intricate leaf detailing typical of the style. I aimed to achieve a polished white marble appearance, enhancing realism and usability across different projects. The model is optimized and exported in multiple formats—OBJ, GLB and glTF—ensuring versatility for architectural visualization, games, or AR/VR use. Additionally, I kept the resolution high (2K) for crisp textures while maintaining efficient geometry for smooth performance.",
+      "link": "https://www.fab.com/listings/c6059763-fed2-4c08-8d8e-ad7a88b898b7"
+    },
+    
+    {
       "title": "Unity Mesh Generator",
+      "type": "creative",
       "subtitle": "Personal Project",
       "imgUrl": "/MeshGen.png",
       "desc": "This MeshGenerator script in Unity procedurally generates a 3D mesh composed of randomly placed points constrained within a specific spherical range. Using KDTree for efficient spatial queries, it connects each vertex to its two nearest neighbors to form triangles. It dynamically ensures the mesh faces outward by checking normals and flipping triangles if necessary. Additionally, each vertex is visualized using a prefab (e.g., a sphere) instantiated at its location. The script showcases procedural mesh generation, nearest neighbor search, and normal correction within Unity using C#.",
       "link": "https://github.com/bigdog765/UnityMeshGenerator"
     },
-    
-    {
-        "title": "AI Regular Show",
-        "subtitle": "Personal Project",
-        "imgUrl": "/AIRegShow.png",
-        "desc": "This is a fun project I decided to attempt after being inspired by a hilarious AI-driven Youtube stream called 'AI Sponge'. Instead of Spongebob, I changed the cartoon to one of my favorite shows as a kid, Regular Show. This project combines the power of Discord Bots, with a direct connection to a Unity Scene that renders all character animation as well as speech, all in real time. Users can interact on a Discord server by providing a subject, in which the main characters Mordecai and Rigby will respond with a funny skit. This project includes Discord bot integration, Python scripting, networking over ports, streaming audio data, AI voice generation and custom modeling and animation in Blender & Unity. The project is a fun way to interact with a favorite show, and see the characters come to life in a new way.",
-        "link": "https://github.com/bigdog765/RegularShowAI"
-    },
     {
         "title": "Telescope Stargazing Info Display",
+        "type": "software",
         "subtitle": "Personal Project",
         "imgUrl": "/Teles.jpg",
         "desc": "This is a DIY project that provides a screen to a user using a telescope. The screen will display useful information for the stargazer, including what planets are in the sky and if sky visibility is good enough to stargaze. The inspiration for starting this project came from a challenge I faced while using my telescope at night. In the dark, it's difficult to gauge sky visibility—factors like cloud cover, humidity, and other conditions aren't always obvious. Additionally, I wanted an easy way to know which planets were visible at any given time. This projects proves to provide the solution I was looking for.",
@@ -30,13 +34,15 @@
     },
     {
         "title": "AI Recipe Generator",
+        "type": "software",
         "subtitle": "Work for Versaware",
         "imgUrl": "RecipeGen.png",
-        "desc": "At Versaware, we needed a reliable source of recipes for user recommendations and discovery, but we didn’t want to depend on third-party providers for the data. To solve this, we created our own proprietary recipe collection. While we weren’t professional chefs, we leveraged our programming expertise to generate recipes using AI. By combining the latest version of ChatGPT with our in-house database of USDA-approved ingredients, we developed a robust script that produces appetizing, easy-to-follow recipes designed to guide users through the cooking process. Each recipe included clear step-by-step instructions, precise nutritional information, and underwent a quality assurance process to ensure it was intuitive, appealing, and accurate. Recipes can be viewed on the mobile app, or on the embedded device.",
+        "desc": "At Versaware, we needed a reliable source of recipes for user recommendations and discovery, but we didn’t want to depend on third-party providers for the data. To solve this, we created our own proprietary recipe generator. While we weren’t professional chefs, we leveraged our programming expertise to generate recipes using AI. By combining the latest version of ChatGPT with our in-house database of USDA-approved ingredients, we developed a robust script that produces appetizing, easy-to-follow recipes designed to guide users through the cooking process. Each recipe included clear step-by-step instructions, precise nutritional information, and underwent a quality assurance process to ensure it was intuitive, appealing, and accurate. Recipes can be viewed on the mobile app, or on the embedded device.",
         "link": "https://apps.apple.com/us/app/versaware/id6476817990"
     },
     {
         "title": "Google Maps Digital Coupon Finder",
+        "type": "software",
         "subtitle": "2024 Hackathon",
         "imgUrl": "mapathon2.png",
         "desc": "I participated in a hackathon called the Google Photorealistic 3D Maps Challenge, hosted by Devpost and Google. The goal of the hackathon was to explore innovative ways for users to interact with Google Maps, with themes including gamification, immersive marketing, and promoting environmental sustainability. For our submission, we developed an interactive portal that allows users to search for coupons and deals at their favorite locations around the world. Users are virtually flown into their chosen destination on the map, where the camera smoothly pans across various coupon-enabled spots. These deals appear directly on the map in an interactive format, and users can select and apply the coupon of their choice.",
@@ -44,6 +50,7 @@
     },
     {
         "title": "Wordstack - Reddit Game Hackathon",
+        "type": "software",
         "subtitle": "2024 Hackathon",
         "imgUrl": "wordstack.png",
         "desc": "The Reddit Games and Puzzles Hackathon is an event hosted by Reddit and Devpost, where participants are challenged to create an original word game, puzzle, or tabletop experience using Reddit’s Developer Platform. Our project, WordStack, is a Reddit-integrated interactive word game where players use letter blocks to form words and stack them to build the tallest tower possible. It’s a fun and competitive way to test vocabulary, engage with friends, and aim for the highest score. We developed the game using object-oriented programming with built-in JavaScript objects, allowing it to dynamically respond to user input. The app is built with modern web technologies including TypeScript for clean and maintainable code, JavaScript for dynamic game logic, HTML and CSS for a responsive interface, and the Reddit SDK for authentication and community features.",
@@ -51,6 +58,7 @@
     },
     {
         "title": "TikTok AutoUploader",
+        "type": "software",
         "subtitle": "Personal Project",
         "imgUrl": "Ttupload.png",
         "desc": "This project was inspired by my idea to launch a TikTok page showcasing the latest images generated by the newest Midjourney model. The entire process is fully automated, with a new TikTok video posted to my account every day at 4 PM—no manual work required. I combined several technologies to bring it to life, including web scraping to collect Midjourney images, the TikTok API for automated posting, and the MoviePy library to enhance videos with effects, music, and more.",
@@ -58,23 +66,26 @@
     },
     {
         "title": "Mica Smart Doll",
+        "type": "software",
         "subtitle": "Senior Project Wayne State 2023",
-        "imgUrl": "doll.png",
+        "imgUrl": "doll.JPG",
         "desc": "This was my senior project, assigned to me and my classmates by our professor, who wanted to create a new toy for his daughter. We developed the Mica Doll, a smart and interactive toy designed to provide young children with a more engaging play experience. Leveraging artificial intelligence and interactive technology, Mica enables two-way communication, allowing children to converse naturally with the doll. The system was built using an Arduino mini computer, equipped with multiple sensors to capture input from the child. It included a microphone, speaker, and even a camera for object detection. My primary responsibility was developing the object detection framework. This was my first experience working with AI models running locally, making it a valuable and eye-opening introduction to the field.",
-        "link": "https://www.example.com"
+        "link": "https://engineering.wayne.edu/academics/hands-on/capstone"
+    },
+    {
+        "title": "AI Regular Show",
+        "type": "software",
+        "subtitle": "Personal Project",
+        "imgUrl": "/AIRegShow.png",
+        "desc": "This is a fun project I decided to attempt after being inspired by a hilarious AI-driven Youtube stream called 'AI Sponge'. Instead of Spongebob, I changed the cartoon to one of my favorite shows as a kid, Regular Show. This project combines the power of Discord Bots, with a direct connection to a Unity Scene that renders all character animation as well as speech, all in real time. Users can interact on a Discord server by providing a subject, in which the main characters Mordecai and Rigby will respond with a funny skit. This project includes Discord bot integration, Python scripting, networking over ports, streaming audio data, AI voice generation and custom modeling and animation in Blender & Unity. The project is a fun way to interact with a favorite show, and see the characters come to life in a new way.",
+        "link": "https://github.com/bigdog765/RegularShowAI"
     },
     {
         "title": "Unity FPS Vacuum Shooter",
+        "type": "software",
         "subtitle": "Personal Project",
         "imgUrl": "/VacuumFPS.png",
         "desc": "This is a Unity Game that I created that is a first person shooter where the player uses a vacuum gun to suck up objects and shoot them at targets. The game is built using Unity and C# and includes a variety of objects that the player can interact with. The game includes a variety of levels and challenges that the player must complete in order to progress. This project focuses alot on player movement, as I wanted to create a FPS that felt responsive and smooth, the player has the ability to double jump, strafe jump and wall run.",
         "link": "https://github.com/bigdog765/VacuumFPS"
-    },
-    {
-        "title": "Custom Game Environment Development",
-        "subtitle": "Black Ops 3 Mod Tools",
-        "imgUrl": "graphics.png",
-        "desc": "This is a project I built with my bare hands, blood, sweat, and tears.",
-        "link": "https://www.example.com"
     }
   ]
