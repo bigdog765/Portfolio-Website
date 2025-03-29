@@ -4,7 +4,7 @@
   display: flex; /* Enable flexbox for main App container */
   flex-direction: column; /* Stack elements vertically */
   align-items: center; /* Center items horizontally */
-  padding-bottom: 2rem; /* Add padding at the bottom for spacing */
+  padding-bottom: 0rem; /* Add padding at the bottom for spacing */
 }
 
 .Cards {
@@ -123,19 +123,20 @@
   display: flex;
   justify-content: space-between; /* Space out text and icons */
   align-items: center; /* Vertically align items */
-  margin-top: 4rem; /* Increased margin for better spacing */
+  margin-top: 3rem; /* Increased margin for better spacing */
   padding: 1rem 2rem; /* More balanced padding */
   background-color: hsl(176deg 29% 40%);
   color: white; /* Set text color to white for bottom nav */
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  box-shadow: var(--shadow-elevation-low);
   font-size: 1rem; /* Use rem for font size */
 }
-
+.url-footer{
+  margin-right: 1rem
+}
 .see-projects {
   margin-top: 1rem; /* Adjust margin for better spacing */
-  color: white;
+  color: rgb(75, 153, 255);
   font-weight: bold;
   text-decoration: none; /* Ensure it's not inheriting link styles */
   display: inline-block; /* To allow margin and padding if needed */

@@ -1,0 +1,14 @@
+.contact-container{
+    
+}
+.contact-form{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for container */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    width: 20%;
+    background-color: hsl(204.68deg 77.45% 40%);
+    border-radius: 7px;
+    padding-inline: 4rem;
+}

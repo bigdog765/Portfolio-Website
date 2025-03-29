@@ -5,11 +5,8 @@ import image_code from './assets/software.png'
 import image_art from './assets/graphics.png'
 import img_wayne from './assets/wayne-logo.png'
 import img_code from './assets/programming-icon.png'
-import img_git from './assets/git-logo.png'
-import img_linked from './assets/linked-logo.png'
 import img_db from './assets/db-icon.png'
-
-import Icon from './Icon.tsx';
+import { GitHubIcon, LinkedInIcon } from "./IconInstances.tsx";
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Projects from "./pages/Projects.js";
@@ -78,22 +75,19 @@ export default function MyApp() {
 
               </Routes>
               
-              <Link to="/projects">See Projects {'>'}</Link>
+              <Link to="/projects" className='see-projects'>See Projects {'>'}</Link>
             </div>
           </div>
-
-
         </div>
 
 
         <div className='bottom-nav'>
-          aidanvg.live
+          <div className='url-footer'>aidanvg.live</div>
           <div className='icons'>
-            <Icon silhouette={img_git} link={''} />
-            <Icon silhouette={img_linked} link={''} />
+            {GitHubIcon}
+            {LinkedInIcon}
           </div>
         </div>
-
       </div>
     </div>
 

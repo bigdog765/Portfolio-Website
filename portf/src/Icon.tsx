@@ -7,9 +7,12 @@ function Icon({silhouette, link}:{silhouette:string,link:string}){
         <div className='icon-parent'>
             
             <button className='button-icon'>
-                <div className='silhouette'>
-                    <img src={silhouette} className='img-sil' alt=''></img>
-                </div>
+                
+                <a href={link} className='link-icon' target="_blank" rel="noopener noreferrer">
+                    <div className='silhouette'>
+                        <img src={silhouette} className='img-sil' alt=''></img>
+                    </div>
+                </a>
             </button>
         </div>
         
