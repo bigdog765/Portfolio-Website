@@ -10,7 +10,7 @@ function ProjectForm({title, imgUrl, subtitle, desc, link}){
           <div className="title">{title}</div>
           <div className="subtitle">{subtitle}</div>
           <div className="picture">
-            {isModel ? <RenderModel modelPath={imgUrl} height={500} width={500} /> :
+            {isModel ? <RenderModel modelPath={imgUrl} height={500} width={500} scale={0.5} yOffset={-2.25} /> :
             <img src={imgUrl} className='imgcss' alt=''></img>}
           </div>
           

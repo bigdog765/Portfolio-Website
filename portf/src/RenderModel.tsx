@@ -5,7 +5,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 const loader = new GLTFLoader();
 
-const RenderModel = ({modelPath, width=window.innerWidth, height=window.innerHeight}) => {
+const RenderModel = ({modelPath, width=window.innerWidth, height=window.innerHeight, scale=1, xOffset=0, yOffset=0, zOffset=0, orbit=true}) => {
   const mountRef = useRef(null);
   const model: any = useRef(null); // Store loaded models
 
@@ -18,7 +18,9 @@ const RenderModel = ({modelPath, width=window.innerWidth, height=window.innerHei
     renderer.setClearColor(0x2e2e2e, 1); // Set background color to dark grey
     
     mountRef.current.appendChild(renderer.domElement);
-    setOrbit(camera, renderer);
+    if(orbit) {
+      setOrbit(camera, renderer);
+    }
 
     loader.load(modelPath, function (gltf) {
       setLighting();
@@ -28,8 +30,8 @@ const RenderModel = ({modelPath, width=window.innerWidth, height=window.innerHei
       setPivot(model);
       renderer.setAnimationLoop( animate );
 
-      model.current.scale.set(0.5, 0.5, 0.5);
-      model.current.position.set(0, -2.25, 0);
+      model.current.scale.set(scale, scale, scale);
+      model.current.position.set(xOffset, yOffset, zOffset);
       camera.position.z = 3.5;
     }, undefined, function (error) {
       console.error(error);
@@ -51,8 +53,11 @@ const RenderModel = ({modelPath, width=window.innerWidth, height=window.innerHei
     }
 
     function animate() {
-      //model.current.rotation.x += 0.01;
-      //model.current.rotation.y += 0.003;
+      if (!orbit) {
+        model.current.position.x = model.current.position.x + 0.0001;
+        model.current.position.y = model.current.position.y - 0.0001;
+        //model.current.rotation.y += 0.003;
+      }
       renderer.render(scene, camera);
     };
     function setOrbit(camera: THREE.PerspectiveCamera, renderer: THREE.WebGLRenderer) {
