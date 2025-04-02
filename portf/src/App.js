@@ -6,7 +6,7 @@ import image_art from './assets/graphics.png'
 import img_wayne from './assets/wayne-logo.png'
 import img_code from './assets/programming-icon.png'
 import img_db from './assets/db-icon.png'
-import { GitHubIcon, LinkedInIcon } from "./IconInstances.tsx";
+import { GitHubIconSmall, LinkedInIconLarge, LinkedInIconSmall } from "./IconInstances.tsx";
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Projects from "./pages/Projects.js";
@@ -84,8 +84,8 @@ export default function MyApp() {
         <div className='bottom-nav'>
           <div className='url-footer'>aidanvg.live</div>
           <div className='icons'>
-            {GitHubIcon}
-            {LinkedInIcon}
+            {GitHubIconSmall}
+            {LinkedInIconSmall}
           </div>
         </div>
       </div>

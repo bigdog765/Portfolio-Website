@@ -13,7 +13,7 @@
       hsl(52deg 32% 86%) 175%
     );
     min-height: 100vh; /* Ensure background covers full viewport height */
-    
+    padding-bottom: 200px;
   }
   
   .text-parent {

@@ -8,6 +8,7 @@ const loader = new GLTFLoader();
 const RenderModel = ({modelPath, width=window.innerWidth, height=window.innerHeight, scale=1, xOffset=0, yOffset=0, zOffset=0, orbit=true}) => {
   const mountRef = useRef(null);
   const model: any = useRef(null); // Store loaded models
+  const scrollOffset = useRef(0);
 
   useEffect(() => {
     const scene = new THREE.Scene();
@@ -15,11 +16,14 @@ const RenderModel = ({modelPath, width=window.innerWidth, height=window.innerHei
     const renderer = new THREE.WebGLRenderer();
 
     renderer.setSize(width, height);
-    renderer.setClearColor(0x2e2e2e, 1); // Set background color to dark grey
+    renderer.setClearColor(0x366B5B, 1); // Set background color to dark grey
     
     mountRef.current.appendChild(renderer.domElement);
     if(orbit) {
       setOrbit(camera, renderer);
+    }
+    else{
+      window.addEventListener("scroll", handleScroll);
     }
 
     loader.load(modelPath, function (gltf) {
@@ -52,14 +56,18 @@ const RenderModel = ({modelPath, width=window.innerWidth, height=window.innerHei
       pivot.add(model.current); // Will rotate the model around the pivot
     }
 
+    let time = 0; // Define a time variable outside of the animate function
+
     function animate() {
       if (!orbit) {
-        model.current.position.x = model.current.position.x + 0.0001;
-        model.current.position.y = model.current.position.y - 0.0001;
-        //model.current.rotation.y += 0.003;
+        time = animateIconModels(time, model, xOffset, scrollOffset, yOffset);
       }
       renderer.render(scene, camera);
-    };
+    }
+    function handleScroll() {
+      scrollOffset.current = window.scrollY;
+    }
+
     function setOrbit(camera: THREE.PerspectiveCamera, renderer: THREE.WebGLRenderer) {
       const controls = new OrbitControls(camera, renderer.domElement);
       controls.update(); // Required for damping
@@ -83,4 +91,23 @@ export default RenderModel;
 
 
 
+
+function animateIconModels(time: number, model: any, xOffset: number, scrollOffset: React.MutableRefObject<number>, yOffset: number) {
+  time += 0.01; // Increment time for a continuous loop
+  const amplitude = 0.45; // Amplitude in radians (~2.9°), adjust as needed
+  // Oscillate rotation:
+  // rotation.x will make the model nod up and down,
+  // rotation.y will gently tilt it left and right.
+  model.current.rotation.x = amplitude * Math.sin(time);
+  model.current.rotation.y = amplitude * Math.cos(time);
+
+  // Also update position based on scroll offset.
+  // Here we move the model to the right (increasing x)
+  // and downward (decreasing y) as the page scrolls.
+  const scrollFactorX = 0.001; // adjust sensitivity as needed
+  const scrollFactorY = 0.002
+  model.current.position.x = xOffset + scrollOffset.current * scrollFactorX;
+  model.current.position.y = yOffset - scrollOffset.current * scrollFactorY;
+  return time
+}
 

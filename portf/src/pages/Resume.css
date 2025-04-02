@@ -8,7 +8,17 @@
     border-radius: 8px; /* Rounded corners for container */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for container */
   }
-  
+  .resume-background{
+    background-image:linear-gradient(
+        20deg,
+        
+        hsl(166deg 20% 47%) 68%,
+        rgb(121, 160, 143) 85%,
+        hsl(137, 13%, 67%) 97%
+        
+      );
+    padding: 20PX;
+  }
   h1,
   h2,
   h3 {

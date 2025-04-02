@@ -8,8 +8,6 @@
   background-color: hsl(138deg 15% 62%);
   border: none; /* Remove default button border */
   border-radius: 8px;
-  width: 40px;
-  height: 40px;
   margin-right: 0.5rem; /* Use rem for margin */
   padding: 0; /* Reset padding for button */
   cursor: pointer; /* Indicate button is clickable */
@@ -27,7 +25,7 @@
 
 .img-sil {
   display: block;
-  width: 60%; /* Adjust icon size within button */
+  
   height: auto;
   margin: auto; /* Center image inside button */
 }

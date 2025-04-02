@@ -5,7 +5,7 @@ const ContactForm: React.FC = ({name, icon}:{name: string, icon: React.FC}) => {
     return (
         <div className='contact-form'>
             <div className='contact-name'>
-                <h2>{name}</h2>
+                <div className='h2-contact'>{name}</div>
             </div>
             {icon}
         </div>
