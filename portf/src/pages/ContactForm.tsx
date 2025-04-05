@@ -1,13 +1,20 @@
 import React from 'react';
-import Icon from '../Icon.tsx'
+import Icon from '../Icon.tsx';
 import './Contact.css';
-const ContactForm: React.FC = ({name, icon}:{name: string, icon: React.FC}) => {
+
+const ContactForm: React.FC<{ name: string; icon: any; text: string; color: string }> = ({ name, icon, text, color }) => {
     return (
-        <div className='contact-form'>
-            <div className='contact-name'>
-                <div className='h2-contact'>{name}</div>
+        <div className="contact-form" style={{ backgroundColor: color }}>
+            <div className="contact-name">
+                <div className="h2-contact">{name}</div>
             </div>
-            {icon}
+            {icon ? (
+                icon
+            ) : (
+                <div className="contact-form-text">
+                    {text}
+                </div>
+            )}
         </div>
     );
 };

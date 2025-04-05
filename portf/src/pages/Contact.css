@@ -4,7 +4,7 @@
 }
 .h1-contact{
     position: absolute;
-    top: 0; left: 50%; /* Center horizontally */
+    top: 0; left: 52%; /* Center horizontally */
     transform: translateX(-50%);
     z-index: 1;
     color: rgb(224, 224, 224);
@@ -15,7 +15,7 @@
     font-weight: 600;
 }
 .h2-contact{
-    padding-inline: 3rem;
+    padding-inline: 2rem;
     color: #333;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -23,17 +23,30 @@
     font-weight: 700;
 }
 .contact-form{
-    position: absolute;
-    z-index: 2;
-    top: 10%; left: 50%; /* Center horizontally */
-    transform: translateX(-50%);
+    position: relative;
+    z-index: 3;
+    
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for container */
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin: auto;
-    width: 30%;
-    background-color: hsl(204.68deg 77.45% 40%);
+    margin: 1rem;
     border-radius: 7px;
-    padding-inline: 1rem;
+    padding-inline: 0rem;
+}
+.contact-forms-parent{
+    position: absolute;
+    margin: 1rem;
+    z-index: 2;
+    top: 10%; left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    width: 40%;
+}
+.contact-form-text{
+    position: relative;
+    text-align: center;
+    margin-block: 1em;
+    padding: .5rem;
+    font-size: x-large;
+    color: #ffffff;
 }

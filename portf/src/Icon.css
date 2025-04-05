@@ -5,7 +5,7 @@
 }
 
 .button-icon {
-  background-color: hsl(138deg 15% 62%);
+  background-color: hsl(0, 0%, 100%);
   border: none; /* Remove default button border */
   border-radius: 8px;
   margin-right: 0.5rem; /* Use rem for margin */
