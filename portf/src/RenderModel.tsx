@@ -5,10 +5,37 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 const loader = new GLTFLoader();
 
-const RenderModel = ({modelPath, width=window.innerWidth, height=window.innerHeight, scale=1, xOffset=0, yOffset=0, zOffset=0, orbit=true}) => {
+const RenderModel = ({modelPaths, width=window.innerWidth, height=window.innerHeight, scale=1, orbit=true}) => {
   const mountRef = useRef(null);
-  const model: any = useRef(null); // Store loaded models
+  const models: any = useRef([]); // Store loaded models
   const scrollOffset = useRef(0);
+
+  const offsetPositions = [
+    {
+      x: -3,
+      y: 1,
+      z: 0,
+      scale: 1.2
+    },
+    {
+      x: 3,
+      y: 1,
+      z: 0,
+      scale: .7
+    },
+    {
+      x: -3.8,
+      y: -1,
+      z: 0,
+      scale: 1.2
+    },
+    {
+      x: 2.5,
+      y: -1,
+      z: 0,
+      scale: 2.4
+    }
+  ]
 
   useEffect(() => {
     const scene = new THREE.Scene();
@@ -26,20 +53,35 @@ const RenderModel = ({modelPath, width=window.innerWidth, height=window.innerHei
       window.addEventListener("scroll", handleScroll);
     }
 
-    loader.load(modelPath, function (gltf) {
-      setLighting();
-      model.current = gltf.scene; 
-      scene.add(model.current);
-
-      setPivot(model);
-      renderer.setAnimationLoop( animate );
-
-      model.current.scale.set(scale, scale, scale);
-      model.current.position.set(xOffset, yOffset, zOffset);
-      camera.position.z = 3.5;
-    }, undefined, function (error) {
-      console.error(error);
-    });
+    setLighting();
+    let i = 0
+    
+    modelPaths.forEach(modelPath => {
+      loader.load(modelPath, function (gltf) {
+        const model = gltf.scene
+        models.current.push(model);
+        scene.add(model);
+  
+        setPivot(model);
+        
+        if(orbit){
+          model.scale.set(2, 2, 2);
+          model.position.set(0, -10, -5);
+        }
+        else{
+          const {x, y, z, scale} = offsetPositions[i]
+          model.scale.set(scale, scale, scale);
+          model.position.set(x, y, z);
+        }
+        
+        camera.position.z = 3.5;
+        i++
+      }, undefined, function (error) {
+        console.error(error);
+      });
+    })
+    console.log(models.current.length)
+    renderer.setAnimationLoop( animate );
     
     function setLighting(){
       const light = new THREE.AmbientLight( 0x404040, 30 ); // soft white light
@@ -53,14 +95,17 @@ const RenderModel = ({modelPath, width=window.innerWidth, height=window.innerHei
     function setPivot(model: any) {
       const pivot = new THREE.Object3D(); // Create a pivot point at 0,0,0
       scene.add(pivot);
-      pivot.add(model.current); // Will rotate the model around the pivot
+      pivot.add(model); // Will rotate the model around the pivot
     }
 
     let time = 0; // Define a time variable outside of the animate function
 
     function animate() {
       if (!orbit) {
-        time = animateIconModels(time, model, xOffset, scrollOffset, yOffset);
+        models.current.forEach((model, index) => {
+          const initialPosition = offsetPositions[index]
+          time = animateIconModels(time, model, initialPosition, scrollOffset);
+        });
       }
       renderer.render(scene, camera);
     }
@@ -84,6 +129,26 @@ const RenderModel = ({modelPath, width=window.innerWidth, height=window.innerHei
     };
   }, []);
 
+
+  function animateIconModels(time: number, model: any, initialPosition: any, scrollOffset: React.MutableRefObject<number>) {
+    time += 0.01 / 9; // Increment time for a continuous loop
+    const amplitude = 0.45; // Amplitude in radians (~2.9°), adjust as needed
+    // Oscillate rotation:
+    // rotation.x will make the model nod up and down,
+    // rotation.y will gently tilt it left and right.
+    model.rotation.x = amplitude * Math.sin(time);
+    model.rotation.y = amplitude * Math.cos(time);
+  
+    // Also update position based on scroll offset.
+    // Here we move the model to the right (increasing x)
+    // and downward (decreasing y) as the page scrolls.
+    const scrollFactorX = 0.001; // adjust sensitivity as needed
+    const scrollFactorY = 0.002
+    model.position.x = initialPosition.x + scrollOffset.current * scrollFactorX;
+    model.position.y = initialPosition.y - scrollOffset.current * scrollFactorY;
+    return time
+  }
+
   return <div ref={mountRef} />;    
 };
   
@@ -92,22 +157,5 @@ export default RenderModel;
 
 
 
-function animateIconModels(time: number, model: any, xOffset: number, scrollOffset: React.MutableRefObject<number>, yOffset: number) {
-  time += 0.01; // Increment time for a continuous loop
-  const amplitude = 0.45; // Amplitude in radians (~2.9°), adjust as needed
-  // Oscillate rotation:
-  // rotation.x will make the model nod up and down,
-  // rotation.y will gently tilt it left and right.
-  model.current.rotation.x = amplitude * Math.sin(time);
-  model.current.rotation.y = amplitude * Math.cos(time);
 
-  // Also update position based on scroll offset.
-  // Here we move the model to the right (increasing x)
-  // and downward (decreasing y) as the page scrolls.
-  const scrollFactorX = 0.001; // adjust sensitivity as needed
-  const scrollFactorY = 0.002
-  model.current.position.x = xOffset + scrollOffset.current * scrollFactorX;
-  model.current.position.y = yOffset - scrollOffset.current * scrollFactorY;
-  return time
-}
 
