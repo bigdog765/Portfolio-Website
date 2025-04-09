@@ -43,7 +43,7 @@ const RenderModel = ({modelPaths, width=window.innerWidth, height=window.innerHe
     const renderer = new THREE.WebGLRenderer();
 
     renderer.setSize(width, height);
-    renderer.setClearColor(0x366B5B, 1); // Set background color to dark grey
+    renderer.setClearColor("#79A08F", 1); // Set background color to dark grey
     
     mountRef.current.appendChild(renderer.domElement);
     if(orbit) {
@@ -142,8 +142,8 @@ const RenderModel = ({modelPaths, width=window.innerWidth, height=window.innerHe
     // Also update position based on scroll offset.
     // Here we move the model to the right (increasing x)
     // and downward (decreasing y) as the page scrolls.
-    const scrollFactorX = 0.001; // adjust sensitivity as needed
-    const scrollFactorY = 0.002
+    const scrollFactorX = 0.002; // adjust sensitivity as needed
+    const scrollFactorY = 0.007
     model.position.x = initialPosition.x + scrollOffset.current * scrollFactorX;
     model.position.y = initialPosition.y - scrollOffset.current * scrollFactorY;
     return time

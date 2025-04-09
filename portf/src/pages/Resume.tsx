@@ -11,21 +11,6 @@ const Resume = () => {
         </p>
         <p>Oxford, Michigan</p>
 
-        <div className="section contact">
-          <h2>Contact</h2>
-          <p>Email: aidy.vg@gmail.com</p>
-          <p>Phone: 248-462-8423</p>
-          <p>
-            LinkedIn:{" "}
-            <a href="https://www.linkedin.com/in/aidan-van-gessel-19ba521b5/">
-              linkedin.com/in/aidan-van-gessel-19ba521b5
-            </a>
-          </p>
-          <p>
-            GitHub:{" "}
-            <a href="https://github.com/bigdog765">github.com/bigdog765</a>
-          </p>
-        </div>
 
         <div className="section about">
           <h2>About</h2>

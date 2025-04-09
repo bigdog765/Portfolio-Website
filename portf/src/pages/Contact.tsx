@@ -6,7 +6,7 @@ import RenderModel from "../RenderModel.tsx";
 const Contact = () => {
     return (
       <div className="contact-container">
-        <RenderModel modelPaths={["Gmail.glb","linkedin_3d.glb","telephone_receiver_3d_icon.glb","github_3d.glb"]} scale={1} width={window.innerWidth - 15} height={850} orbit={false} />
+        <RenderModel modelPaths={["Gmail.glb","linkedin_3d.glb","telephone_receiver_3d_icon.glb","github_3d.glb"]} scale={1} width={window.innerWidth - 15} height={870} orbit={false} />
         <div className="h1-contact">Contact Me</div>
         
         <div className="contact-forms-parent">

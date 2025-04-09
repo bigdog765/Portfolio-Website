@@ -18,7 +18,7 @@
   
   .text-parent {
     padding: 2rem; /* Add padding around text content */
-    padding-right: 5rem;
+    padding-right: 2rem;
     max-width: 1200px; /* Limit width of text parent */
     margin-left: auto;
     margin-right: auto;

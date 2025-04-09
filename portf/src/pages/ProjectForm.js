@@ -2,10 +2,11 @@ import React from "react";
 import './ProjectForm.css';
 import RenderModel from '../RenderModel.tsx'; // Adjust the path as needed
 
-function ProjectForm({title, imgUrl, subtitle, desc, link}){
+function ProjectForm({title, imgUrl, subtitle, desc, link, switchDirection=false, biggerText=false}) {
   const isModel = imgUrl.includes('.glb')
     return(
-      <div className="projectform">
+      
+      <div className={`projectform ${switchDirection ? 'reverse' : ''}`}>
         <div className="title-picture">
           <div className="title">{title}</div>
           <div className="subtitle">{subtitle}</div>
@@ -21,7 +22,7 @@ function ProjectForm({title, imgUrl, subtitle, desc, link}){
             {link}</a>
           </div>
           <br></br>
-          <div className="project-desc">{desc}</div>
+          <div className={`project-desc ${biggerText ? 'bigger': ''}`}>{desc}</div>
           
         </div>
       </div>

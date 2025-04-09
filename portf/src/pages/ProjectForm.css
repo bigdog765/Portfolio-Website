@@ -1,7 +1,7 @@
 .projectform {
     width: 100%; /* Take full width of parent */
     
-    margin: 1.5rem; /* Use rem for margin around form */
+    margin-block: 3rem;
     background-color: aquamarine;
     border-radius: 10px;
     padding: 1.5rem; /* Add padding inside form */
@@ -12,12 +12,16 @@
     gap: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for container */
   }
+  .projectform.reverse {
+    flex-direction: row-reverse; /* Switches the order */
+  }
   
   .title {
     color: black;
     font-size: 2rem; /* Use rem for title font size */
     margin-bottom: 0.5rem; /* Spacing below title */
-    text-align: left;
+    
+    font-weight: 600;
   }
   .subtitle{
     color: black;
@@ -46,4 +50,8 @@
     line-height: 1.4; /* Improve readability with line height */
     flex: 1;
     align-items: center;
+  }
+  .project-desc.bigger {
+    font-size: 1.8rem; /* Increase font size for description */
+    line-height: 1.6; /* Increase line height for better readability */
   }
