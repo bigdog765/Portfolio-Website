@@ -6,6 +6,7 @@ import image_art from './assets/graphics.png'
 import img_wayne from './assets/wayne-logo.png'
 import img_code from './assets/programming-icon.png'
 import img_db from './assets/db-icon.png'
+import img_versa from './assets/versapng.webp'
 import { GitHubIconSmall, LinkedInIconLarge, LinkedInIconSmall } from "./IconInstances.tsx";
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -42,6 +43,11 @@ export default function MyApp() {
             My programming skills are primarily focused on object-oriented languages such as <b>C++</b> and <b>Java</b>.
             Additionally, I am experienced in working with Python, SQL, JavaScript, and HTML, allowing me to take on a wide range of
             programming tasks with confidence. <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
             Now working as <b> Head Data Engineer at Versaware</b>, a nutritional intelligence-based startup.
             Proficient in <b>backend frameworks and data pipeline architecture</b>, including emerging technologies like RAG-based data, vector databases, and machine learning principles.
             Hands-on experience with the <b>Qt for MCU </b>developer environment, organizing the data architecture of an embedded device from the low-level up to the cloud.
@@ -51,7 +57,7 @@ export default function MyApp() {
               <img src={img_wayne} className='imgcss-wayne' alt=''></img>
             </div>
             <div className='code-icon'>
-              <img src={img_code} className='imgcss-code' alt=''></img>
+              <img src={img_versa} className='imgcss-code' alt=''></img>
             </div>
           </div>
         </div>
@@ -82,7 +88,7 @@ export default function MyApp() {
 
 
         <div className='bottom-nav'>
-          <div className='url-footer'>portfolio-aidanvg-wheat-beta.vercel.app</div>
+          <div className='url-footer'>portfolio-aidanvg-beta.vercel.app</div>
           <div className='icons'>
             {GitHubIconSmall}
             {LinkedInIconSmall}

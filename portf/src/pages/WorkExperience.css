@@ -16,6 +16,13 @@
     min-height: 100vh; /* Ensure background covers full viewport height */
     
 }
+.header-work{
+    display: flex;
+    align-items: center;
+}
+.header-work-right{
+    padding-right: 2rem;
+}
 .work-experience-container{
     padding: 3rem;
     min-height: 100vh; /* Ensure background covers full viewport height */
@@ -32,5 +39,10 @@
     font-weight: 400;
     color: rgb(255, 255, 255);
     text-align: left; /* Align title to the left */
-    max-width: 60%;
+    max-width: 70%;
+    margin-bottom: .5rem;
+}
+.link-versa{
+    font-size: larger;
+    
 }

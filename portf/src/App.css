@@ -133,23 +133,24 @@
 }
 .url-footer{
   margin-right: 1rem;
- 
   padding-inline: 2rem;
 }
 .see-projects {
-  margin-top: 1rem; /* Adjust margin for better spacing */
   color: rgb(75, 153, 255);
   font-weight: bold;
   text-decoration: none; /* Ensure it's not inheriting link styles */
   display: inline-block; /* To allow margin and padding if needed */
-  padding: 0.5rem 1rem; /* Add some padding for click area */
+  padding: 0.1rem .7rem; /* Add some padding for click area */
   border-radius: 8px; /* Optional: Add border radius for button look */
 }
 
 .see-projects:hover {
   color: #afafaf;
 }
-
+.code-icon{
+  margin: 6rem;
+  width: 20rem;
+}
 /* Media Query for smaller screens - Example adjustments for mobile */
 @media (max-width: 768px) {
   .Cards {
