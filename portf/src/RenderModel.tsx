@@ -43,13 +43,15 @@ const RenderModel = ({modelPaths, width=window.innerWidth, height=window.innerHe
     const renderer = new THREE.WebGLRenderer();
 
     renderer.setSize(width, height);
-    renderer.setClearColor("#79A08F", 1); // Set background color to dark grey
+    
     
     mountRef.current.appendChild(renderer.domElement);
     if(orbit) {
+      renderer.setClearColor("#414a4c", 1);
       setOrbit(camera, renderer);
     }
     else{
+      renderer.setClearColor("#66CCAA", 1);
       window.addEventListener("scroll", handleScroll);
     }
 

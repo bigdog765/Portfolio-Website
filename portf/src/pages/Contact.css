@@ -25,7 +25,7 @@
 .contact-form{
     position: relative;
     z-index: 3;
-    
+    transition: transform 0.2s ease-in-out; /* Smooth transition for hover */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for container */
     display: flex;
     justify-content: space-between;
@@ -33,6 +33,9 @@
     margin: 2rem;
     border-radius: 7px;
     padding-inline: 0rem;
+}
+.contact-form:hover {
+    transform: scale(1.02);
 }
 .contact-forms-parent{
     position: absolute;

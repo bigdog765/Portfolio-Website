@@ -132,7 +132,9 @@
   font-size: 1rem; /* Use rem for font size */
 }
 .url-footer{
-  margin-right: 1rem
+  margin-right: 1rem;
+ 
+  padding-inline: 2rem;
 }
 .see-projects {
   margin-top: 1rem; /* Adjust margin for better spacing */

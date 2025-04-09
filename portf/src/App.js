@@ -82,7 +82,7 @@ export default function MyApp() {
 
 
         <div className='bottom-nav'>
-          <div className='url-footer'>aidanvg.live</div>
+          <div className='url-footer'>portfolio-aidanvg-wheat-beta.vercel.app</div>
           <div className='icons'>
             {GitHubIconSmall}
             {LinkedInIconSmall}
