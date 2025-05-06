@@ -11,6 +11,8 @@
       );
 }
 .nav-container{
+    position: relative;
+    z-index: 999999;
     width:100%;
     height: 80px;
     background-color:hsl(176deg 29% 40%);

@@ -1,0 +1,169 @@
+.work-experience-parent{
+    
+    background-image: linear-gradient(
+      20deg,
+      rgb(17, 104, 115) 17%,
+      hsl(183deg 44% 33%) 34%,
+      hsl(176deg 29% 40%) 51%,
+      hsl(166deg 20% 47%) 68%,
+      rgb(121, 160, 143) 85%,
+      hsl(138deg 15% 62%) 102%,
+      hsl(113deg 15% 69%) 119%,
+      hsl(89deg 18% 74%) 136%,
+      hsl(70deg 21% 79%) 153%,
+      hsl(52deg 32% 86%) 175%
+    );
+    min-height: 100vh; /* Ensure background covers full viewport height */
+    position: relative;
+}
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+    /* now everything in here is on top of the stars */
+}
+.header-work{
+    display: flex;
+    align-items: center;
+}
+.header-work-right{
+    padding-right: 2rem;
+}
+.work-experience-container{
+    padding: 3rem;
+    min-height: 100vh; /* Ensure background covers full viewport height */
+    margin-inline: 7rem;
+}
+.h1-work-experience{
+    font-size: 4rem; /* Use rem for project title, adjusted down from 800% */
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align: left; /* Align title to the left */
+}
+.h2-about-versa{
+    font-size: 1.2rem; /* Use rem for project title, adjusted down from 800% */
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-align: left; /* Align title to the left */
+    max-width: 70%;
+    margin-bottom: .5rem;
+}
+.link-versa{
+    font-size: larger;
+    
+}
+
+
+/* CSS for the stars background */
+
+@mixin sp-layout {
+    @media screen and (max-width: 750px) {
+        @content;
+    }
+}
+
+@function random_range($min, $max) {
+    $rand: random();
+    $random_range: $min + floor($rand * (($max - $min) + 1));
+    @return $random_range;
+}
+
+.stars {
+    position: fixed;
+    top: -15rem;
+    left: 10rem;
+    width: 100%;
+    height: 120%;
+    transform: rotate(-45deg);
+    z-index: 0;
+}
+
+.star {
+    $star-count: 50;
+    --star-color: var(--primary-color);
+    --star-tail-length: 6em;
+    --star-tail-height: 2px;
+    --star-width: calc(var(--star-tail-length) / 6);
+    --fall-duration: 9s;
+    --tail-fade-duration: var(--fall-duration);
+
+    
+    position: absolute;
+    top: var(--top-offset);
+    left: 0;
+    width: var(--star-tail-length);
+    height: var(--star-tail-height);
+    //color: var(--star-color);
+    color: #00e660;
+    background: linear-gradient(45deg, currentColor, transparent);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 6px currentColor);
+    transform: translate3d(104em, 0, 0);
+    animation: fall var(--fall-duration) var(--fall-delay) linear infinite, tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+
+    @include sp-layout {
+        
+        animation: fall var(--fall-duration) var(--fall-delay) linear infinite;
+    }
+
+    @for $i from 1 through $star-count {
+        &:nth-child(#{$i}) {
+            --star-tail-length: #{random_range(500em, 750em) / 100};
+            --top-offset: #{random_range(0vh, 10000vh) / 100};
+            --fall-duration: #{random_range(6000, 12000s) / 1000};
+            --fall-delay: #{random_range(0, 10000s) / 1000};
+        }
+    }
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: calc(var(--star-width) / -2);
+        width: var(--star-width);
+        height: 100%;
+        background: linear-gradient(45deg, transparent, currentColor, transparent);
+        border-radius: inherit;
+        animation: blink 2s linear infinite;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes fall {
+    to {
+        transform: translate3d(-30em, 0, 0);
+    }
+}
+
+@keyframes tail-fade {
+
+    0%,
+    50% {
+        width: var(--star-tail-length);
+        opacity: 1;
+    }
+
+    70%,
+    80% {
+        width: 0;
+        opacity: 0.4;
+    }
+
+    100% {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.6;
+    }
+}

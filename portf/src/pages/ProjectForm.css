@@ -1,8 +1,7 @@
 .projectform {
     width: 100%; /* Take full width of parent */
-    
     margin-block: 3rem;
-    background-color: aquamarine;
+    background-color: rgba(127, 255, 212, 0.646);
     border-radius: 10px;
     padding: 1.5rem; /* Add padding inside form */
     box-sizing: border-box; /* Include padding in width calculation */
