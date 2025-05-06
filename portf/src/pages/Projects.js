@@ -8,7 +8,7 @@ function Projects() {
     const creativeProjects = projectData.filter(proj => proj.type === 'creative')
     const softwareProjects = projectData.filter(proj => proj.type === 'software')
     return(
-      <div className="background-sh">
+      <div className="background-sh-proj">
         <div className="text-parent">
           <div className="title-project">Projects</div>
           <div className="subt-project" id="sfw-section">Software Development</div>

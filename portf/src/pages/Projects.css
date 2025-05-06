@@ -1,4 +1,4 @@
-.background-sh.projects-bg { /* Specific background for projects page */
+.background-sh-proj { /* Specific background for projects page */
     background-image: linear-gradient(
       20deg,
       rgb(17, 104, 115) 17%,
@@ -71,4 +71,5 @@
     .text-parent {
       padding: 1rem; /* Adjust padding on mobile */
     }
+    
   }
